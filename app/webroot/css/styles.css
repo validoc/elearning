@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*---------------------- 
+  RESET CSS
+------------------------*/
+html, body, div, 
+h1, h2, h3, h4, h5, h6, 
+p, blockquote, 
+a, span, img, strong, 
+dl, dt, dd, ol, ul, li,
+form, fieldset, label, input, textarea
+{
+     margin: 0px;
+     padding: 0px;
+     border: none;
+     outline: 0px; 
+     font-weight: normal;
+}
+ul, ol, li{list-style-type: none;}
+a{text-decoration:none;}
+/*---------------------- 
+  CUSTOM CSS
+------------------------*/
+
+h1, h2, h3, h4, h5, h6 {font-weight:bold; color:#000000; margin:0px;}
+header, section ,footer, nav, figure, time{
+    display:block;
+}

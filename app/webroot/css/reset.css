@@ -1,0 +1,73 @@
+@charset "utf-8";
+/*----------------------
+  RESET CSS
+------------------------*/
+html, body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote,
+a, span, img, strong,
+dl, dt, dd, ol, ul, li,
+form, fieldset, label, input, textarea
+{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: 0px;
+    font-weight: normal;
+}
+ul, ol, li{
+    list-style-type: none;
+}
+a{
+    text-decoration:none;
+}
+/*----------------------
+  CUSTOM CSS
+------------------------*/
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+    /*font-weight:bold;*/
+    /*color:#000000;*/
+    /*margin:0px;*/
+}
+header, section ,footer, nav, figure, time{
+    /*display:block;*/
+}
+
+@font-face {
+    font-family: "medium";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/DINNextLTPro-Medium.otf");
+}
+@font-face {
+    font-family: "bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/DINNextLTPro-Bold.otf");
+}
+@font-face {
+    font-family: "black";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/DINNextLTPro-Black.otf");
+}
+@font-face {
+    font-family: "light";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/DINNextLTPro-Light.otf");
+}
+@font-face {
+    font-family: "regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/DINNextLTPro-Regular.otf");
+}
+@font-face {
+    font-family: "heavy";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/DINNextLTPro-Heavy.otf");
+}

@@ -1,0 +1,494 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'tblack';
+    src: url('../fonts/frutigerltstd-black_0-webfont.eot');
+    src: url('../fonts/frutigerltstd-black_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/frutigerltstd-black_0-webfont.woff') format('woff'),
+         url('../fonts/frutigerltstd-black_0-webfont.ttf') format('truetype'),
+         url('../fonts/frutigerltstd-black_0-webfont.svg#frutiger_lt_std75_black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tlight';
+    src: url('../fonts/fr_lite-webfont.eot');
+    src: url('../fonts/fr_lite-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fr_lite-webfont.woff') format('woff'),
+         url('../fonts/fr_lite-webfont.ttf') format('truetype'),
+         url('../fonts/fr_lite-webfont.svg#frutiger_45_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tverdana';
+    src: url('../fonts/verdana-webfont.eot');
+    src: url('../fonts/verdana-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/verdana-webfont.woff') format('woff'),
+         url('../fonts/verdana-webfont.ttf') format('truetype'),
+         url('../fonts/verdana-webfont.svg#verdanaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'froman';
+    src: url('../fonts/frutiger-roman-1361545833-webfont.eot');
+    src: url('../fonts/frutiger-roman-1361545833-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/frutiger-roman-1361545833-webfont.woff') format('woff'),
+         url('../fonts/frutiger-roman-1361545833-webfont.ttf') format('truetype'),
+         url('../fonts/frutiger-roman-1361545833-webfont.svg#frutigerroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'tbold';
+    src: url('../fonts/frutigerltstd-bold_0-webfont.eot');
+    src: url('../fonts/frutigerltstd-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/frutigerltstd-bold_0-webfont.woff') format('woff'),
+         url('../fonts/frutigerltstd-bold_0-webfont.ttf') format('truetype'),
+         url('../fonts/frutigerltstd-bold_0-webfont.svg#frutiger_lt_std65_bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+header{
+	 border-bottom: 5px solid #739600; 
+	 overflow: hidden;
+}
+.logo_left{
+	float: left;
+	margin: 12px 0 0 40px;
+}
+.logo_right{
+	background: url("../images/hoja.png") no-repeat right;
+	float: right;
+    height: 60px;
+    width: 265px;
+    padding: 10px 0 0;
+    margin: 20px 35px 0 0;
+}
+.logo_right h3, .logo_right span{
+	font-size: 31.85px;
+}
+.box h3, .box span{
+	font-size: 20px;
+}
+.logo_right h3, .box h3{
+	font-family: tblack;
+	color: #001868;
+	margin: 0 0 5px;
+}
+.logo_right span, .box span{
+	font-family: tblack;
+	color: #0098d1;
+}
+.center_imagen {
+    margin: 0 auto;
+    width: 1008px;
+    height: 282px;
+}
+.central_box {
+    border: 2px solid #D0D0D0;
+    border-radius: 20px;
+    height: 328px;
+    left: 14.3%;
+    position: absolute;
+    top: 52%;
+    width: 960px;
+    /*background-color: #FFFFFF;*/
+    background: url("../images/bg_flotante.png") repeat-x center #FFFFFF;
+    box-shadow: 0 126px 0 -120px #bdbdbd;
+}
+.box {
+    background: url("../images/divisor.png") no-repeat scroll right center;
+    float: left;
+    height: 287px;
+    padding: 11px 15px 0 25px;
+    width: 210px;
+}
+.box p{
+	font-family: tverdana;
+	font-size: 12px;
+	margin: 0 0 8px;
+}
+.box_videos{
+	width: auto;
+	background: none;
+}
+.box_videos .video{
+	float: left;
+	margin: 0 8px 0 0;
+}
+a.btn_azul{
+	background: url("../images/bg_btn.png") no-repeat scroll center;
+    color: #FFFFFF;
+    display: block;
+    font-family: tblack;
+    font-size: 16px;
+    height: 30px;
+    padding: 10px 0 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 0 10px;
+}
+
+a.btn_descargar {
+    background: url("../images/icono_descarga.png") no-repeat scroll 90% 7px #737373;
+    border-radius: 4px;
+    color: #FFFFFF;
+    display: block;
+    font-family: tblack;
+    font-size: 14px;
+    height: 28px;
+    padding: 4px 0 0;
+    text-align: center;
+    width: 200px;
+}
+.imagen_box{
+	height: 136px;
+	margin: 0 0 10px 0;
+}
+.content {
+    background-color: #EEEEEE;
+    height: 190px;
+    margin: 0 auto 9%;
+    width: 1007px;
+}
+footer {
+    border-bottom: 5px solid #E1E1E1;
+    margin: 0 0 40px;
+    padding: 0 0 15px;
+    text-align: center;
+}
+footer small{
+	font-family: verdana;
+	font-size: 12px;
+}
+/*LOGIN*/
+.box_login h3{
+	font-family: tblack;
+	color: #001868;
+	font-size: 22px;
+	margin: 0 0 15px;
+}
+.box_login span{
+	font-family: tblack;
+	color: #0098d1;
+	font-size: 22px;
+}
+.box_login small {
+    display: block;
+    float: left;
+    font-family: tverdana;
+    font-size: 12px;
+    margin: 0 35px 2px 0;
+    width: 70px;
+}
+.box_login input[type="text"]{
+	width: 334px;
+	height: 31px;
+	border: 1px solid #919191;
+	border-radius: 5px;
+}
+.form {
+    left: 33%;
+    position: absolute;
+    top: 14%;
+    width: 343px;
+}
+.box_login input[type="text"].first{
+	margin: 0 0 30px 0;
+}
+.form a.btn_azul {
+	border-radius: 7px;
+    margin: 35px 0 10px;
+    width: 139px;
+}
+/*GUIA*/
+header.guia{
+	height: 40px;
+	text-align: center;
+	background-color: #FFFFFF;
+	margin: 0 0 15px;
+}
+header.guia .logo_left {
+    margin: 5px 0 0 40px;
+}
+header.guia .logo_right { 
+	margin: 0 35px 0 0;
+	background: url("../images/hoja2.png") no-repeat center;
+	width: 33px;
+	height: 33px;
+}
+header.guia .logo_left a img{
+	width: 40px;
+}
+.center_header{
+    display: inline-block;
+    margin: 6px 0 0;
+}
+.center_header h3{
+	font-family: tblack;
+	color: #001868;
+	font-size: 20px;
+	margin: 0 0 15px;
+}
+.center_header span{
+	font-family: tblack;
+	color: #0098d1;
+	font-size: 20px;
+}
+.content_guia{
+	height: 460px;
+    margin: 0 auto 15%;
+}
+body#guia{
+	background-color: #eeeeee;
+}
+footer#guia{
+	border-bottom: none;
+}
+ul.bxslider li{
+	background-color: #eeeeee;
+}
+ul.bxslider li p.gp {
+    font-family: tverdana;
+    font-size: 11px;
+    margin: 10px 0 7px 100px;
+}
+ul.bxslider li p.gp b{
+	color: #009ed8;
+}
+.pasador {
+    margin: 25px 0 0 40px;
+}
+/*TEST*/
+.slider_test ul.bxslider li .box_slider{
+	width: 925px;
+	height: 570px;
+	display: block;
+	border: 1px solid #e0ded8;
+	border-radius: 5px;
+	margin: 0 0 0 40px;
+	background-color: white;
+}
+.box_test{
+	overflow: hidden;
+}
+.left_box{
+	float: left;
+	width: 382px;
+	height: 411px;
+	margin: 45px 0 0 75px;
+	background: url("../images/sombra_center.png") no-repeat right;
+	position: relative;
+}
+.right_box{
+	float: left;
+	width: 410px;
+	height: 411px;
+	margin: 45px 0 0;
+	position: relative;
+}
+.title_pregunta {
+    display: inline-block;
+    left: 1%;
+    position: absolute;
+    top: 45%;
+}
+.title_pregunta h3{
+	font-family: tblack;
+	color: #001868;
+	font-size: 32px;
+}
+.title_pregunta span{
+	font-family: tblack;
+	color: #0098d1;
+	font-size: 32px;
+}
+.preguntas {
+    position: absolute;
+    right: -5%;
+    top: 25%;
+}
+.pregunta {
+    margin: 0 0 50px;
+}
+.pregunta p {
+     display: inline-block;
+    font-family: froman;
+    font-size: 16px;
+    line-height: 19px;
+    margin: -5px 0 0 15px;
+    width: 375px;
+}
+.radio {
+    float: left;
+    margin: 5px 0 0;
+}
+.preguntas a.btn_azul {
+	margin: 0 0 10px 27px;
+}
+.box_test h6{
+	text-align: center;
+	font-family: tblack;
+	font-size: 20px;
+	color: #505151;
+	font-weight: normal;
+	margin: 20px 0 0 0;
+}
+.right_box .preguntas2{
+	top: 19%;
+}
+.left_box .title_pregunta4{
+	top: 34%;
+}
+.right_box .preguntas4{
+	top: 8%;
+}
+.left_box .title_pregunta5{
+	top: 29%;
+}
+.right_box .preguntas5{
+	top: 12%;
+}
+.left_box .title_pregunta6{
+	top: 7%;
+}
+.right_box .preguntas6{
+	top: 6%;
+}
+.left_box .title_pregunta7{
+	top: 29%;
+}
+.right_box .preguntas7{
+	top: 3%;
+}
+.right_box .preguntas8{
+	top: 29%;
+}
+.left_box .title_pregunta8{
+	top: 35%;	
+}
+
+.left_box .title_pregunta9{
+	top: 34%;
+}
+.left_box .title_pregunta10{
+	left: -7%; 
+	top: 43%;
+}
+.left_box .title_pregunta11{
+    left: -3%;
+    top: 24%;
+}
+.left_box .title_pregunta12{
+    top: 34%;
+}
+.left_box .title_pregunta13{
+    top: 31%;
+}
+.respuesta_correcta {
+    border: 1px solid #D0D0D0;
+    border-radius: 12px;
+    height: 459px;
+    margin: 51px 0 0 45px;
+    width: 829px;
+    position: relative;
+}
+.respuesta_incorrecta {
+    border-radius: 12px;
+    height: 459px;
+    margin: 51px 0 0 45px;
+    width: 829px;
+    position: relative;
+}
+.respuesta_incorrecta .box_respuesta h1{
+	font-size: 40px;
+	margin: 35px 0 0 46px;
+}
+.box_respuesta {
+    background-color: #009FDA;
+    border: 1px solid #D0D0D0;
+    border-radius: 12px;
+    height: 120px;
+    left: 18%;
+    position: absolute;
+    top: 39%;
+    width: 550px;
+}
+.box_respuesta h1{
+	color: #eeeeee;
+    font-family: tlight;
+    font-size: 45px;
+    margin: 32px 0 0 38px;
+}
+.respuesta_correcta a.btn_azul {
+    left: 38%;
+    position: absolute;
+    top: 95%;
+}
+.respuesta_incorrecta a.btn_azul {
+    left: 38%;
+    position: absolute;
+    top: 95%;
+    font-size: 14px;
+}
+.felicitaciones{
+	display: inline-block;
+    margin: 9% 0 0 14%;
+    text-align: center;
+}
+.felicitaciones h3{
+	font-family: tbold;
+	font-size: 40px;
+	color: #005197;
+}
+.felicitaciones p{
+	font-family: tlight;
+	font-size: 40px;
+	color: #0095cf;
+	margin: 0 0 70px;
+}
+/*VIDEO*/
+.box_video{
+    background-color: #FFFFFF;
+    border: 1px solid #E0DED8;
+    border-radius: 10px;
+    display: block;
+    height: 570px;
+    margin: 0 0 0 40px;
+    width: 925px;
+}
+
+.box_video > img {
+    margin: 25px 0 0 10px;
+}
+
+/*RADIO BUTTON*/
+/*label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+}
+label:before {
+	content: "";
+	display: inline-block;
+	background: url("../images/radio.png");
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+input[type=radio]:checked + label:before {
+    background: url("../images/radio2.png");
+}
+input[type=radio]{
+	
+}
+*/
