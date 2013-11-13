@@ -17,6 +17,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/touch-icon-ipad.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/touch-icon-retina.png" />
 
+    <link rel="stylesheet" type="text/css" href="/css/dandelion.css" />
+
     <?php
     $user = $this->Session->read('Auth.User');
     $controller = $this->request->params['controller'];
@@ -28,9 +30,6 @@
 
     //<!--  Fluid Grid System -->
     echo $this->Html->css('fluid');
-
-    //<!--  Main Stylesheet -->
-    echo $this->Html->css('dandelion');
 
     //<!-- Theme Stylesheet -->
     echo $this->Html->css('dandelion.theme');
@@ -98,50 +97,16 @@
                     $modulo = "";
                     if($action == "admin_index" || $action == "")
                         $modulo = "class='active'";
-                    switch($controller){
+                    switch($controller) {
                         case "consola":
                             echo "<li $modulo><a href='/admin/$controller'><img src='../images/icons/black/16/home.png' alt='Consola' />Consola</a></li>";
                         break;
-                        case "provincias":
-                            echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/airplane.png' alt='Provincias' />Provincias</a></li>";
-                        break;
-                        case "letters":
-                            echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/text_document.png' alt='Cartas' />Cartas</a></li>";
-
+                        case "usuarios":
+                            echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/admin_user.png' alt='Usuarios' />Usuarios</a></li>";
                             switch($action){
                                 case "admin_add":
-                                    echo "<li class='active'><span>Agregar</span></li>";
+                                    echo "<li class='active'><span>Nuevo</span></li>";
                                 break;
-                                case "admin_edit":
-                                    echo "<li class='active'><span>Editar</span></li>";
-                                break;
-                            }
-                        break;
-                        case "typeletters":
-                            echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/word_documents_small.png' alt='Tipos de Cartas' />Tipos de Cartas</a></li>";
-                            switch($action){
-                                case "admin_add":
-                                    echo "<li class='active'><span>Agregar</span></li>";
-                                break;
-                                case "admin_edit":
-                                    echo "<li class='active'><span>Editar</span></li>";
-                                break;
-                            }
-                        break;
-                        case "typelearnings":
-                            echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/create_write.png' alt='Tipo de Aprendizaje' />Tipo de Aprendizaje</a></li>";
-                            switch($action){
-                                case "admin_add":
-                                    echo "<li class='active'><span>Agregar</span></li>";
-                                break;
-                                case "admin_edit":
-                                    echo "<li class='active'><span>Editar</span></li>";
-                                break;
-                            }
-                        break;
-                        case "donations":
-                            echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/create_write.png' alt='Donacion' />Donacion</a></li>";
-                            switch($action){
                                 case "admin_edit":
                                     echo "<li class='active'><span>Editar</span></li>";
                                 break;
@@ -166,71 +131,25 @@
             <!-- Main Navigation -->
             <div id="da-main-nav" class="da-button-container">
                 <ul>
-                    <li <?= $controller == "clients"? "class='active'" : ""?>>
-                        <a href="/admin/clients">
-                            <!-- Icon Container -->
-                            <span class="da-nav-icon">
-                                <?= $this->Html->image('../images/icons/black/32/admin_user.png', array('alt' => 'Clientes')); ?>
-                            </span>
-                            Clientes
+                    <li <?= $controller == "consola" ? "class='active'" : ""?>>
+                        <a href="/admin/consola">
+                                    <span class="da-nav-icon">
+                                        <img alt="Consola" src="/img/../images/icons/black/32/home.png">
+                                    </span>
+                            Consola
                         </a>
                     </li>
-                    <li <?= $controller == "donations"? "class='active'" : ""?>>
-                        <a href="/admin/donations">
-                            <!-- Icon Container -->
-                            <span class="da-nav-icon">
-                                <?= $this->Html->image('../images/icons/black/32/group.png', array('alt' => 'Donación')); ?>
-                            </span>
-                            Donación
-                        </a>
-                    </li>
-                    <li <?= $controller == "letters"? "class='active'" : ""?>>
-                        <a href="/admin/letters">
-                            <!-- Icon Container -->
-                            <span class="da-nav-icon">
-                                <?= $this->Html->image('../images/icons/black/32/text_document.png', array('alt' => 'Cartas')); ?>
-                            </span>
-                            Cartas
-                        </a>
-                    </li>
-                    <li <?= $controller == "typeletters"? "class='active'" : ""?>>
-                        <a href="/admin/typeletters">
-                            <!-- Icon Container -->
-                            <span class="da-nav-icon">
-                                <?php echo $this->Html->image('/images/icons/black/32/word_documents_1.png', array('alt' => 'Tipo de Cartas')); ?>
-                            </span>
-                            Tipo de Cartas
-                        </a>
-                    </li>
-
-                    <li <?= $controller == "typelearnings"? "class='active'" : ""?>>
-                        <a href="/admin/typelearnings">
-                            <!-- Icon Container -->
-                            <span class="da-nav-icon">
-                                <?= $this->Html->image('/images/icons/black/32/create_write.png', array('alt' => 'Tipo de Aprendizaje')); ?>
-                            </span>
-                            Tipo de Aprendizaje
-                        </a>
-                    </li>
-                    <li <?= $controller == "provincias"? "class='active'" : ""?>>
-                        <a href="<?= $this->Html->url(array('controller' => 'provincias', 'action' => 'index'))?>">
-                            <!-- Icon Container -->
-                            <span class="da-nav-icon">
-                                <?= $this->Html->image('../images/icons/black/32/airplane.png', array('alt' => 'Provincias')); ?>
-                            </span>
-                            Provincias
-                        </a>
-                    </li>
-                    <li <?= $controller == "maintenance" || $controller == 'users'? "class='active'" : ""?>>
+                    <li <?= $controller == "usuarios" || $controller == 'usuarios' ? "class='active'" : ""?>>
                         <a href="#">
                             <!-- Icon Container -->
                             <span class="da-nav-icon">
-                                <?= $this->Html->image('../images/icons/black/32/cog_4.png', array('alt' => 'Mantenimiento')); ?>
+                                <?= $this->Html->image('../images/icons/black/32/admin_user.png', array('alt' => 'Usuarios')); ?>
                             </span>
-                            Configuracion
+                            Usuarios
                         </a>
-                        <ul <?= $controller == "maintenance" || $controller == 'users'? "" : "class='closed'"?>>
-                            <li><?= $this->Html->link('Administracion de usuario', array('controller' => 'users', 'action' => 'index')) ?></li>
+                        <ul <?= $controller == "usuarios" || $controller == 'usuarios'? "" : "class='closed'"?>>
+                            <li><?= $this->Html->link('Gestion usuarios', array('controller' => 'usuarios', 'action' => 'index')) ?></li>
+                            <li><?= $this->Html->link('Agregar usuario', array('controller' => 'usuarios', 'action' => 'add')) ?></li>
                         </ul>
                     </li>
                 </ul>
