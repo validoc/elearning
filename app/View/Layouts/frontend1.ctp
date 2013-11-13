@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title><?= $title_page; ?></title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <?php
+        echo $this->Html->script('jquery-1.7.2.min');
+        echo $this->fetch('meta');
+        echo $this->fetch('css');
+        echo $this->fetch('script');
+    ?>
 </head>
 <body>
 <header>

@@ -194,6 +194,12 @@ footer small{
 	border: 1px solid #919191;
 	border-radius: 5px;
 }
+.box_login input[type="password"]{
+    width: 334px;
+    height: 31px;
+    border: 1px solid #919191;
+    border-radius: 5px;
+}
 .form {
     left: 33%;
     position: absolute;
@@ -201,7 +207,11 @@ footer small{
     width: 343px;
 }
 .box_login input[type="text"].first{
-	margin: 0 0 30px 0;
+	/*margin: 0 0 30px 0;*/
+    color: #000000;
+}
+.box_login .error{
+    color: #ff0000;
 }
 .form a.btn_azul {
 	border-radius: 7px;

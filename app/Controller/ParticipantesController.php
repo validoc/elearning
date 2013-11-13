@@ -60,4 +60,18 @@ class ParticipantesController extends AppController {
         }
         $this->redirect(array('action' => 'index'));
     }
+
+    public function login() {
+        $this->layout = 'frontend1';
+        $this->set('title_page', '.:: LOGIN ::.');
+        if(!$this->request->is('get')) {
+            $datos = $this->request->data;
+            $participante = $this->Participante->find('first', array('conditions' => array('Participante.iniciales' => $datos['Participante']['nombre'], 'iniciales' => $datos['Participante']['iniciales'])));
+            if(count($participante) > 0) {
+//                $this->redirect(array('controller' => 'home', 'action' => 'index'));
+            } else {
+                $this->set('mensaje', 'Error de autenticacion');
+            }
+        }
+    }
 } 
