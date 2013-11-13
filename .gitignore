@@ -10,7 +10,7 @@ Thumbs.db
 
 # ARCHIVOS CAKEPHP
 app/Config/database.php
-#app/tmp/*
+app/tmp/*
 
 # ARCHIVOS IDE
 .idea/*

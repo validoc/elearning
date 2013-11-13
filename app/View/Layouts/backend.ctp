@@ -112,6 +112,17 @@
                                 break;
                             }
                         break;
+                        case "participantes":
+                            echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/user_comment.png' alt='Participantes' />Participantes</a></li>";
+                            switch($action){
+                                case "admin_add":
+                                    echo "<li class='active'><span>Nuevo</span></li>";
+                                break;
+                                case "admin_edit":
+                                    echo "<li class='active'><span>Editar</span></li>";
+                                break;
+                            }
+                        break;
                     }
                     ?>
                 </ul>
@@ -150,6 +161,19 @@
                         <ul <?= $controller == "usuarios" || $controller == 'usuarios'? "" : "class='closed'"?>>
                             <li><?= $this->Html->link('Gestion usuarios', array('controller' => 'usuarios', 'action' => 'index')) ?></li>
                             <li><?= $this->Html->link('Agregar usuario', array('controller' => 'usuarios', 'action' => 'add')) ?></li>
+                        </ul>
+                    </li>
+                    <li <?= $controller == "participantes" || $controller == 'participantes' ? "class='active'" : ""?>>
+                        <a href="#">
+                            <!-- Icon Container -->
+                            <span class="da-nav-icon">
+                                <?= $this->Html->image('../images/icons/black/32/user_comment.png', array('alt' => 'participantes')); ?>
+                            </span>
+                            Participantes
+                        </a>
+                        <ul <?= $controller == "participantes" || $controller == 'participantes'? "" : "class='closed'"?>>
+                            <li><?= $this->Html->link('Gestion participantes', array('controller' => 'participantes', 'action' => 'index')) ?></li>
+                            <li><?= $this->Html->link('Agregar participante', array('controller' => 'participantes', 'action' => 'add')) ?></li>
                         </ul>
                     </li>
                 </ul>

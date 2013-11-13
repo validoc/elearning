@@ -8,6 +8,13 @@ class ValidocComponent extends Component{
         return $GRUPOS;
     }
 
+    public function getTipoParticipante(){
+        $GRUPOS = array();
+        $GRUPOS[1] = "Participante";
+        $GRUPOS[2] = "Veedor";
+        return $GRUPOS;
+    }
+
     public function sendEmail($template, $from, $to, $subject, $params = null) {
         App::uses('CakeEmail', 'Network/Email');
 //        $Email = new CakeEmail('validoc');
