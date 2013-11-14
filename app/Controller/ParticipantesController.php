@@ -68,7 +68,8 @@ class ParticipantesController extends AppController {
             $datos = $this->request->data;
             $participante = $this->Participante->find('first', array('conditions' => array('Participante.iniciales' => $datos['Participante']['nombre'], 'iniciales' => $datos['Participante']['iniciales'])));
             if(count($participante) > 0) {
-//                $this->redirect(array('controller' => 'home', 'action' => 'index'));
+                $this->Session->write('participante', $participante);
+                $this->redirect(array('controller' => 'home', 'action' => 'index'));
             } else {
                 $this->set('mensaje', 'Error de autenticacion');
             }

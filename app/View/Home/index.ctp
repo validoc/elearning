@@ -1,5 +1,5 @@
 <div class="center_imagen">
-    <img src="images/imagen_head.png" alt="eLearning">
+    <img src="/images/imagen_head.png" alt="eLearning">
 </div>
 <div class="content">
     <div class="central_box">
@@ -10,10 +10,10 @@
                 en estos slides.
             </p>
             <div class="imagen_box">
-                <a href="#"><img src="/images/icono_imagen.png" alt="Guia de planes"></a>
+                <a href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>"><img src="/images/icono_imagen.png" alt="Guia de planes"></a>
             </div>
-            <a href="#" class="btn_azul">VER GUIA</a>
-            <a href="#" class="btn_descargar">Descargar guia</a>
+            <a href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>" class="btn_azul">VER GUIA</a>
+            <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'guia'));?>" class="btn_descargar">Descargar guia</a>
         </div>
         <div class="box">
             <h3>T<span>e</span>st</h3>
@@ -22,20 +22,20 @@
                 en estos slides.
             </p>
             <div class="imagen_box">
-                <a href="#"><img src="/images/icono_right.png" alt="Test"></a>
+                <a href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>"><img src="/images/icono_right.png" alt="Test"></a>
             </div>
-            <a href="#" class="btn_azul">TEST ONLINE</a>
-            <a href="#" class="btn_descargar">Descargar test</a>
+            <a href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>" class="btn_azul">TEST ONLINE</a>
+            <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'test'));?>" class="btn_descargar">Descargar test</a>
         </div>
         <div class="box box_videos">
             <h3>Vi<span>de</span>os</h3>
             <div class="video">
                 <p>Bajada sobre Video1</p>
-                <a href="#"><img src="/images/icono_video1.png" alt="Video"></a>
+                <a href="<?= $this->Html->url(array('controller' => 'video', 'action' => 'index', 1));?>"><img src="/images/icono_video1.png" alt="Video"></a>
             </div>
             <div class="video">
                 <p>Bajada sobre Video1</p>
-                <a href="#"><img src="/images/icono_video2.png" alt="Video"></a>
+                <a href="<?= $this->Html->url(array('controller' => 'video', 'action' => 'index', 2));?>"><img src="/images/icono_video2.png" alt="Video"></a>
             </div>
         </div>
     </div>

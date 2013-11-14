@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title><?= $title_page; ?></title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body id="guia">
     <header class="guia">
