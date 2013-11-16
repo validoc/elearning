@@ -15,6 +15,20 @@ class ValidocComponent extends Component{
         return $GRUPOS;
     }
 
+    public function getEstado(){
+        $ESTADOS = array();
+        $ESTADOS[0] = "Deshabilitado";
+        $ESTADOS[1] = "Activo";
+        return $ESTADOS;
+    }
+
+    public function getTipoDocumento(){
+        $TIPO_DOCUMENTO = array();
+        $TIPO_DOCUMENTO[1] = "Guia";
+        $TIPO_DOCUMENTO[2] = "Test";
+        return $TIPO_DOCUMENTO;
+    }
+
     public function sendEmail($template, $from, $to, $subject, $params = null) {
         App::uses('CakeEmail', 'Network/Email');
 //        $Email = new CakeEmail('validoc');

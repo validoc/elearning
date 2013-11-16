@@ -23,6 +23,7 @@ CREATE TABLE archivos (
   id              int AUTO_INCREMENT NOT NULL,
   created         datetime,
   modified        datetime,
+  nombre          varchar(100),
   tipo_documento  int(1) NOT NULL,
   estado          int(1) NOT NULL,
   PRIMARY KEY (id)
