@@ -15,26 +15,9 @@
         <ul class="bxslider">
 <!--            <li>-->
 <!--                <div class="box_slider box_test">-->
-<!--                    <p class="gp"><b>Trabajar en equipo.</b> Antepone los intereses funcionales a los de Novo Nordisk a los suyos propios o a los del equipo. Busca sinergias <br/> mas que diferencias y hace un esfuerzo por trabajar eficazmente con los demas siguiendo los procesos acordados en equipo. Contribuye a <br/> fomentar un clima de comunicacion, confianza y cooperacion.</p>-->
-<!--                    <img src="images/tabla1.png" alt="guia de planes">-->
+<!--                    <img src="/resource/guias/01.jpg" alt="guia de planes">-->
 <!--                </div>-->
 <!--            </li>-->
-<!--            <li>-->
-<!--                <div class="box_slider box_test">-->
-<!--                    <p class="gp"><b>Trabajar en equipo.</b> Antepone los intereses funcionales a los de Novo Nordisk a los suyos propios o a los del equipo. Busca sinergias <br/> mas que diferencias y hace un esfuerzo por trabajar eficazmente con los demas siguiendo los procesos acordados en equipo. Contribuye a <br/> fomentar un clima de comunicacion, confianza y cooperacion.</p>-->
-<!--                    <img src="images/tabla2.png" alt="guia de planes">-->
-<!--                </div>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div class="box_slider box_test">-->
-<!--                    <img src="images/tabla3.png" alt="guia de planes">-->
-<!--                </div>-->
-<!--            </li>-->
-            <li>
-                <div class="box_slider box_test">
-                    <img src="/resource/guias/01.jpg" alt="guia de planes">
-                </div>
-            </li>
             <li>
                 <div class="box_slider box_test">
                     <img src="/resource/guias/02.jpg" alt="guia de planes">
@@ -55,11 +38,11 @@
                     <img src="/resource/guias/05.jpg" alt="guia de planes">
                 </div>
             </li>
-            <li>
-                <div class="box_slider box_test">
-                    <img src="/resource/guias/06.jpg" alt="guia de planes">
-                </div>
-            </li>
+<!--            <li>-->
+<!--                <div class="box_slider box_test">-->
+<!--                    <img src="/resource/guias/06.jpg" alt="guia de planes">-->
+<!--                </div>-->
+<!--            </li>-->
             <li>
                 <div class="box_slider box_test">
                     <img src="/resource/guias/07.jpg" alt="guia de planes">
