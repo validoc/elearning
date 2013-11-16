@@ -9,6 +9,9 @@
 class UsuariosController extends AppController {
 
     public function beforeFilter() {
+        if($this->request->params['action'] != 'admin_login') {
+            parent::beforeFilter();
+        }
         $this->layout = 'backend';
     }
 
@@ -60,5 +63,25 @@ class UsuariosController extends AppController {
             $this->Session->setFlash(__('El usuario con id: %s No fue eliminado.', h($id)), 'error_message');
         }
         $this->redirect(array('action' => 'index'));
+    }
+
+    public function admin_login() {
+        $this->set('title_page', 'Admin - Login');
+        $this->layout = false;
+        if ($this->request->is('post')) {
+            $datos = $this->request->data;
+            $usuario = $this->Usuario->find('first', array('conditions' => array('username' => $datos['Usuario']['username'],
+                                                                                'password' => $datos['Usuario']['password'])));
+            if (count($usuario) > 0) {
+                $this->Session->write('usuario', $usuario);
+                return $this->redirect(array('controller' => 'consola', 'action' => 'index'));
+            }
+            $this->Session->setFlash(__('Usuario o password invalido, Intente de nuevo'));
+        }
+    }
+
+    public function admin_logout() {
+        $this->Session->delete('usuario');
+        return $this->redirect(array('controller' => 'usuarios', 'action' => 'index'));
     }
 } 

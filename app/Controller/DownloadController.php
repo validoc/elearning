@@ -7,6 +7,11 @@
  */
 
 class DownloadController extends AppController {
+
+    public function beforeFilter() {
+        parent::beforeFilter();
+    }
+
     public function guia()
     {
         $TIPO_DOC = 1;
