@@ -8,7 +8,9 @@
 
 class ParticipantesController extends AppController {
     public function beforeFilter() {
-        parent::beforeFilter();
+        if($this->request->params['action'] != 'login') {
+            parent::beforeFilter();
+        }
         $this->layout = 'backend';
     }
 
