@@ -7,5 +7,11 @@
  */
 
 class Respuesta extends AppModel {
-
+    //----- relacion n - 1
+    public $belongsTo = array(
+        'Participante' => array(
+            'className' => 'Participante',
+            'foreignKey' => 'participante_id'
+        )
+    );
 } 

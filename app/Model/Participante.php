@@ -7,5 +7,11 @@
  */
 
 class Participante extends AppModel {
-
+    //----- relacion 1 - n
+//    public $hasMany = array(
+//        'Respuesta' => array(
+//            'className' => 'Respuesta',
+//            'foreignKey' => 'participante_id'
+//        )
+//    );
 } 
