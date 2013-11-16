@@ -20,7 +20,7 @@ class TestsController extends AppController {
         $participante = $this->Session->read('participante');
         if($this->request->is('get')) {
             if ($participante['Participante']['tipo_participante'] == 1) {
-                $respuesta = $this->Respuesta->find('first', array('conditions' => array('calificacion' => 1), 'order' => array('pregunta_id' => 'desc')));
+                $respuesta = $this->Respuesta->find('first', array('conditions' => array('calificacion' => 1, 'participante_id' => $participante['Participante']['id']), 'order' => array('pregunta_id' => 'desc')));
                 if ($respuesta == null) {
                     $pregunta = 1;
                 } elseif ($respuesta['Respuesta']['pregunta_id'] == 13) {

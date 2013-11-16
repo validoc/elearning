@@ -10,6 +10,8 @@ Thumbs.db
 # ARCHIVOS CAKEPHP
 app/Config/database.php
 app/tmp/*
+app/webroot/resource/videos/*.mp4
+app/webroot/resource/guias/*.jpg
 
 # ARCHIVOS IDE
 .idea/*

@@ -123,6 +123,17 @@
                                 break;
                             }
                         break;
+                        case "reportes":
+                            echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/text_document.png' alt='Participantes' />Reportes</a></li>";
+                            switch($action){
+                                case "admin_ingresos":
+                                    echo "<li class='active'><span>R. Ingresos</span></li>";
+                                    break;
+                                case "admin_aciertos":
+                                    echo "<li class='active'><span>R. Aciertos</span></li>";
+                                    break;
+                            }
+                            break;
                     }
                     ?>
                 </ul>
@@ -174,6 +185,21 @@
                         <ul <?= $controller == "participantes" || $controller == 'participantes'? "" : "class='closed'"?>>
                             <li><?= $this->Html->link('Gestion participantes', array('controller' => 'participantes', 'action' => 'index')) ?></li>
                             <li><?= $this->Html->link('Agregar participante', array('controller' => 'participantes', 'action' => 'add')) ?></li>
+                        </ul>
+                    </li>
+                    <li <?= $controller == "reportes" || $controller == 'reportes' ? "class='active'" : ""?>>
+                        <a href="#">
+                            <!-- Icon Container -->
+                            <span class="da-nav-icon">
+                                <?= $this->Html->image('../images/icons/black/32/text_document.png', array('alt' => 'reportes')); ?>
+                            </span>
+                            Reportes
+                        </a>
+                        <ul <?= $controller == "reportes" || $controller == 'reportes'? "" : "class='closed'"?>>
+                            <li><?= $this->Html->link('R. Ingresos', array('controller' => 'reportes', 'action' => 'ingresos')) ?></li>
+                            <li><?= $this->Html->link('R. % Aciertos', array('controller' => 'reportes', 'action' => 'aciertos')) ?></li>
+                            <li><?= $this->Html->link('R. Finalizados', array('controller' => 'reportes', 'action' => 'finalizados')) ?></li>
+                            <li><?= $this->Html->link('R. Intentos x Pregunta', array('controller' => 'reportes', 'action' => 'intentos')) ?></li>
                         </ul>
                     </li>
                 </ul>
