@@ -128,10 +128,16 @@
                             switch($action){
                                 case "admin_ingresos":
                                     echo "<li class='active'><span>R. Ingresos</span></li>";
-                                    break;
+                                break;
                                 case "admin_aciertos":
                                     echo "<li class='active'><span>R. Aciertos</span></li>";
-                                    break;
+                                break;
+                                case "admin_finalizados":
+                                    echo "<li class='active'><span>R. Finalizados</span></li>";
+                                break;
+                                case "admin_intentos":
+                                    echo "<li class='active'><span>R. Intentos</span></li>";
+                                break;
                             }
                             break;
                     }

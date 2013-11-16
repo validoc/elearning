@@ -40,7 +40,7 @@
                                 </td>
                                 <td>
                                     <?php $porcentaje = 100 * $pregunta['acierto'] / $pregunta['total']?>
-                                    <?= $porcentaje.'%'?>
+                                    <?= number_format($porcentaje, 2) .'%'?>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

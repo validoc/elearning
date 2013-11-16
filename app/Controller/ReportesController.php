@@ -207,5 +207,48 @@ class ReportesController extends AppController {
 
     public function admin_intentos() {
         $this->set('title_page', 'Admin - Intentos x Pregunta');
+        $this->loadModel('Participante');
+        $this->loadModel('Respuesta');
+        $this->loadModel('Pregunta');
+        $participantes = $this->Participante->find('list');
+        $this->set('participantes', $participantes);
+        $preguntas = array();
+        if($this->request->is('get')) {
+            $habilitado = false;
+        } else {
+            $habilitado = true;
+            $datos = $this->request->data;
+            $participante_id = $datos['participante_select'];
+            $preguntas = $this->Pregunta->find('all');
+            $intentos = $this->Respuesta->find('all', array('fields' => array('Respuesta.participante_id', 'Respuesta.pregunta_id', 'count(Respuesta.pregunta_id) as cantidad'),
+                                                            'conditions' => array('participante_id' => $participante_id),
+                                                            'group' => array('pregunta_id')));
+            $this->set('intentos', $intentos);
+        }
+        $this->set('habilitado', $habilitado);
+        $this->set('preguntas', $preguntas);
+    }
+
+    public function admin_intentos_export() {
+        $this->layout = false;
+        $datos = $this->request->data;
+        $this->loadModel('Participante');
+        $this->loadModel('Respuesta');
+        $this->loadModel('Pregunta');
+        $participante_id = $datos['participante_select'];
+        $this->Participante->id = $participante_id;
+        $participante = $this->Participante->read();
+        $this->set('participante', $participante);
+        $preguntas = $this->Pregunta->find('all');
+        $intentos = $this->Respuesta->find('all', array('fields' => array('Respuesta.participante_id', 'Respuesta.pregunta_id', 'count(Respuesta.pregunta_id) as cantidad'),
+                                                        'conditions' => array('participante_id' => $participante_id),
+                                                        'group' => array('pregunta_id')));
+        $this->set('intentos', $intentos);
+        $this->set('preguntas', $preguntas);
+        //Header
+        header("Content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
+        header("Content-Disposition: attachment;filename=Reporte_intentos_".date('Y-m-d').".xls");
+        header("Cache-Control: max-age=0");
+        header("Expires: 0");
     }
 } 
