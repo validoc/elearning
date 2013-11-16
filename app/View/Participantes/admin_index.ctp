@@ -35,7 +35,7 @@
                         <?= $participante['Participante']['iniciales']; ?>
                     </td>
                     <td>
-                        <?= $participante['Participante']['tipo_participante']; ?>
+                        <?= $GRUPOS[$participante['Participante']['tipo_participante']]; ?>
                     </td>
                     <td style="text-align: center;">
                         <?php

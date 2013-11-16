@@ -18,6 +18,8 @@ class ParticipantesController extends AppController {
         $this->set('title_page', 'Admin - Listado participantes');
         $participantes = $this->Participante->find('all', array('all', array('order' => array('Participante.id' => 'desc'))));
         $this->set('participantes', $participantes);
+        $Validoc = $this->Components->load('Validoc');
+        $this->set('GRUPOS', $Validoc->getTipoParticipante());
     }
 
     public function admin_add() {
