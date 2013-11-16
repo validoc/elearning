@@ -10,6 +10,6 @@ class GuiaController extends AppController {
     public function index() {
         $this->layout = 'frontend2';
         $this->set('title_page', '.:: GUIA ::.');
-        $this->set('title_front', '<h3>Guia <span>de </span>planes</h3>');
+        $this->set('title_front', '<h3><img src="images/lguiap.png" alt="Guia"></h3>');
     }
 } 

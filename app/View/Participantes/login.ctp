@@ -15,7 +15,9 @@
             )
         ));?>
         <div class="form">
-            <h3>L<span>og</span>in</h3>
+            <h3>
+                <img src="/images/login_degrade.png" alt="Login">
+            </h3>
             <small>Usuario</small>
             <?= $this->Form->input('nombre', array('class' => 'first field_required')); ?>
             <br/>
@@ -23,8 +25,9 @@
             <?= $this->Form->input('iniciales', array('type' => 'password', 'class' => 'field_required')); ?>
             <a style="cursor: pointer" class="btn_azul" id="submit">INGRESAR</a>
             <?= ( isset($mensaje) ? "<label class='error'>$mensaje</label>" : '')?>
-            
+
         </div>
+        <div class="sombra"></div>
         </form>
     </div>
 </div>

@@ -3,29 +3,35 @@
 </div>
 <div class="content">
     <div class="central_box">
-        <div class="box">
-            <h3>Guia <span>de</span> planes</h3>
-            <p>
-                Bajada sobre lo que se va a ver <br />
-                en estos slides.
-            </p>
-            <div class="imagen_box">
-                <a href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>"><img src="/images/icono_imagen.png" alt="Guia de planes"></a>
+        <div class="boxes">
+            <div class="box box1">
+                <h3>
+                    <img src="images/lguia.png" alt="Guia de planes">
+                </h3>
+                <p>
+                    Bajada sobre lo que se va a ver <br />
+                    en estos slides.
+                </p>
+                <div class="imagen_box">
+                    <a href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>"><img src="/images/icono_imagen.png" alt="Guia de planes"></a>
+                </div>
+                <a href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>" class="btn_azul">VER GUIA</a>
+                <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'guia'));?>" class="btn_descargar">Descargar guia</a>
             </div>
-            <a href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>" class="btn_azul">VER GUIA</a>
-            <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'guia'));?>" class="btn_descargar">Descargar guia</a>
-        </div>
-        <div class="box">
-            <h3>T<span>e</span>st</h3>
-            <p>
-                Bajada sobre lo que se va a ver <br />
-                en estos slides.
-            </p>
-            <div class="imagen_box">
-                <a href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>"><img src="/images/icono_right.png" alt="Test"></a>
+            <div class="box box2">
+                <h3>
+                    <img src="images/ltest.png" alt="Test">
+                </h3>
+                <p>
+                    Bajada sobre lo que se va a ver <br />
+                    en estos slides.
+                </p>
+                <div class="imagen_box box_dt">
+                    <a href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>"><img src="/images/icono_right.png" alt="Test"></a>
+                </div>
+                <a href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>" class="btn_azul">TEST ONLINE</a>
+                <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'test'));?>" class="btn_descargar">Descargar test</a>
             </div>
-            <a href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>" class="btn_azul">TEST ONLINE</a>
-            <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'test'));?>" class="btn_descargar">Descargar test</a>
         </div>
         <div class="box box_videos">
             <h3>Vi<span>de</span>os</h3>
@@ -39,4 +45,5 @@
             </div>
         </div>
     </div>
+    <div class="sombra sombra_home"></div>
 </div>

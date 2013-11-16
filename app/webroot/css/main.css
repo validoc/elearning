@@ -55,21 +55,23 @@
     font-style: normal;
 
 }
-header{
-	 border-bottom: 5px solid #739600; 
-	 overflow: hidden;
+header {
+    border-bottom: 5px solid #739600;
+    height: 81px;
+    margin: 0 auto;
+    overflow: hidden;
 }
-.logo_left{
-	float: left;
-	margin: 12px 0 0 40px;
+.logo_left {
+    float: left;
+    margin: 14px 0 0 40px;
 }
-.logo_right{
-	background: url("../images/hoja.png") no-repeat right;
-	float: right;
-    height: 60px;
-    width: 265px;
+.logo_right {
+    background: url("../images/hoja.png") no-repeat scroll right center rgba(0, 0, 0, 0);
+    float: right;
+    height: 52px;
+    margin: 19px 35px 0 0;
     padding: 10px 0 0;
-    margin: 20px 35px 0 0;
+    width: 265px;
 }
 .logo_right h3, .logo_right span{
 	font-size: 31.85px;
@@ -77,10 +79,13 @@ header{
 .box h3, .box span{
 	font-size: 20px;
 }
-.logo_right h3, .box h3{
-	font-family: tblack;
-	color: #001868;
-	margin: 0 0 5px;
+.logo_right h3, .box h3 {
+    color: #001868;
+    font-family: tblack;
+    margin: 0 0 5px;
+}
+.logo_right img {
+    margin: 0 0 0 20px;
 }
 .logo_right span, .box span{
 	font-family: tblack;
@@ -92,16 +97,14 @@ header{
     height: 282px;
 }
 .central_box {
+    background: url("../images/bg_flotante.png") repeat-x scroll center center #FFFFFF;
     border: 2px solid #D0D0D0;
     border-radius: 20px;
     height: 328px;
     left: 14.3%;
     position: absolute;
-    top: 52%;
+    top: 300px;
     width: 960px;
-    /*background-color: #FFFFFF;*/
-    background: url("../images/bg_flotante.png") repeat-x center #FFFFFF;
-    box-shadow: 0 126px 0 -120px #bdbdbd;
 }
 .box {
     background: url("../images/divisor.png") no-repeat scroll right center;
@@ -137,24 +140,36 @@ a.btn_azul{
 }
 
 a.btn_descargar {
-    background: url("../images/icono_descarga.png") no-repeat scroll 90% 7px #737373;
+    background: url("../images/icono_descarga.png") no-repeat scroll 97% 8px #737373;
     border-radius: 4px;
     color: #FFFFFF;
     display: block;
     font-family: tblack;
     font-size: 14px;
-    height: 28px;
-    padding: 4px 0 0;
-    text-align: center;
-    width: 200px;
+    height: 26px;
+    padding: 7px 0 0 50px;
+    width: 150px;
 }
-.imagen_box{
-	height: 136px;
-	margin: 0 0 10px 0;
+a.btn_azul:hover{
+    background: none;
+    background-color: #0ba4dd;
+    border-radius:5px;
+}
+a.btn_descargar:hover {
+    background: none;
+    background-color: #0ba4dd
+}
+.imagen_box {
+    height: 136px;
+    margin: 0;
+}
+.box_dt {
+    margin: 0 0 2px;
 }
 .content {
     background-color: #EEEEEE;
     height: 190px;
+    /*margin: 0 auto 10%;*/
     margin: 0 auto 9%;
     width: 1007px;
 }
@@ -237,9 +252,9 @@ header.guia .logo_right {
 header.guia .logo_left a img{
 	width: 40px;
 }
-.center_header{
+.center_header {
     display: inline-block;
-    margin: 6px 0 0;
+    margin: 11px 0 0;
 }
 .center_header h3{
 	font-family: tblack;
@@ -336,10 +351,6 @@ ul.bxslider li p.gp b{
     margin: -5px 0 0 15px;
     width: 375px;
 }
-.radio {
-    float: left;
-    margin: 5px 0 0;
-}
 .preguntas a.btn_azul {
 	margin: 0 0 10px 27px;
 }
@@ -367,7 +378,7 @@ ul.bxslider li p.gp b{
 	top: 12%;
 }
 .left_box .title_pregunta6{
-	top: 7%;
+	top: 20%;
 }
 .right_box .preguntas6{
 	top: 6%;
@@ -480,25 +491,61 @@ ul.bxslider li p.gp b{
 }
 
 /*RADIO BUTTON*/
-/*label {
-	display: inline-block;
-	cursor: pointer;
-	position: relative;
+.radio {
+    /*float: left;
+    margin: 5px 0 0;*/
+    float: left;
+    margin: -6px 24px 0 0;
+}
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
 }
 label:before {
-	content: "";
-	display: inline-block;
-	background: url("../images/radio.png");
-	width: 34px;
-	height: 34px;
-	position: absolute;
-	left: 0;
-	top: 0;
+    content: "";
+    display: inline-block;
+    background: url("../images/radio.png");
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 input[type=radio]:checked + label:before {
     background: url("../images/radio2.png");
 }
 input[type=radio]{
-	
+    display:none;
 }
-*/
+
+.content_header {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1006px;
+}
+.sombra{
+    background: url("../images/sombra_box.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    height: 30px;
+    position: absolute;
+    top: 100%;
+    width: 960px;
+}
+.sombra_home{
+    top: 630px;
+    left: 195px;
+}
+.boxes {
+    margin: 15px auto 0;
+    width: 620px;
+}
+.box1 {
+    padding: 0 100px 0 0;
+}
+.box2{
+    padding: 0 0 0 100px;
+    background: none;
+}
+.box_videos{
+    display:none;
+}

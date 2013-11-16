@@ -14,11 +14,15 @@
 </head>
 <body>
 <header>
-    <div class="logo_left">
-        <a href="#"><img src="/images/logo_left.png" alt="novo nordisk"></a>
-    </div>
-    <div class="logo_right">
-        <h3>eLe<span>ar</span>ning</h3>
+    <div class="content_header">
+        <div class="logo_left">
+            <a href="#"><img src="/images/logo_left.png" alt="novo nordisk"></a>
+        </div>
+        <div class="logo_right">
+            <h3>
+                <img src="/images/degrade.png" alt="E-learning">
+            </h3>
+        </div>
     </div>
 </header>
 <?= $this->Session->flash(); ?>
