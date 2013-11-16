@@ -204,4 +204,8 @@ class ReportesController extends AppController {
         header("Cache-Control: max-age=0");
         header("Expires: 0");
     }
+
+    public function admin_intentos() {
+        $this->set('title_page', 'Admin - Intentos x Pregunta');
+    }
 } 
