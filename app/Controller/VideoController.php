@@ -7,6 +7,11 @@
  */
 
 class VideoController extends AppController {
+
+    public function beforeFilter() {
+        parent::beforeFilter();
+    }
+
     public function index() {
         $this->layout = 'frontend2';
         $this->set('title_page', '.:: VIDEO ::.');

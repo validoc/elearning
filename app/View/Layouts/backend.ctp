@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="/css/dandelion.css" />
 
     <?php
-    $user = $this->Session->read('Auth.User');
+    $user = $this->Session->read('usuario');
     $controller = $this->request->params['controller'];
     $action = $this->request->params['action'];
 
@@ -72,14 +72,14 @@
                         <?= $this->Html->image('../images/profile.jpg', array('alt' => 'Perfil')); ?>
                     </div>
                     <div id="da-user-info">
-                        <?= $user['username']?>
-                        <span class="da-user-title"><?= $user['role']?></span>
+                        <?= $user['Usuario']['username']?>
+                        <span class="da-user-title">Administrador</span>
                     </div>
                 </div>
                 <div id="da-header-button-container">
                     <ul>
                         <li class="da-header-button logout">
-                            <a href="<?= $this->Html->url(array('controller' => 'users', 'action' => 'logout')) ?>">Logout</a>
+                            <a href="<?= $this->Html->url(array('controller' => 'usuarios', 'action' => 'logout')) ?>">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -124,7 +124,7 @@
                             }
                         break;
                         case "archivos":
-                            echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/user_comment.png' alt='Archivos' />Archivos</a></li>";
+                            echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/word_document.png' alt='Archivos' />Archivos</a></li>";
                             switch($action){
                                 case "admin_edit":
                                     echo "<li class='active'><span>Editar</span></li>";
@@ -205,7 +205,7 @@
                         <a href="/admin/archivos">
                             <!-- Icon Container -->
                             <span class="da-nav-icon">
-                                <?= $this->Html->image('../images/icons/black/32/text_document.png', array('alt' => 'archivos')); ?>
+                                <?= $this->Html->image('../images/icons/black/32/word_document.png', array('alt' => 'archivos')); ?>
                             </span>
                             Archivos
                         </a>

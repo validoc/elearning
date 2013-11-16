@@ -8,8 +8,12 @@
 
 class ConsolaController extends AppController {
 
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->layout = 'backend';
+    }
+
     public function admin_index(){
         $this->set('title_page', 'Unicef Admin - Consola');
-        $this->layout = 'backend';
     }
 } 
