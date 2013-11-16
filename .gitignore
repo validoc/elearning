@@ -12,6 +12,9 @@ app/Config/database.php
 app/tmp/*
 app/webroot/resource/videos/*.mp4
 app/webroot/resource/guias/*.jpg
+app/webroot/resource/archivos/*.pdf
+app/webroot/resource/archivos/*.rtf
+
 
 # ARCHIVOS IDE
 .idea/*
