@@ -24,7 +24,7 @@
             <small style="margin: 30px 0 0 0;">Password</small>
             <?= $this->Form->input('iniciales', array('type' => 'password', 'class' => 'field_required')); ?>
             <a style="cursor: pointer" class="btn_azul" id="submit">INGRESAR</a>
-            <?= ( isset($mensaje) ? "<label class='error'>$mensaje</label>" : '')?>
+            <?= ( isset($mensaje) ? "<span class='error'>$mensaje</span>" : '')?>
 
         </div>
         <div class="sombra"></div>
@@ -39,7 +39,7 @@
         });
 
         //Validate
-        $("#form_participante").validate();
+        $("#form_participante").validate({errorElement: "span"});
         //
         $('.field_required').each(function() {
             $(this).rules('add', {
