@@ -9,23 +9,35 @@
 class DownloadController extends AppController {
     public function guia()
     {
-        $file = Router::url('/', true) . 'resource/archivos/GUIA_Planes_de_Carrera.pdf';
-        //Forzar la descarga
-        $nombre = 'GUIA_Planes_de_Carrera.pdf';
-        header('Content-type: application/pdf');
-        header('Content-Disposition: attachment; filename="' . $nombre . '"');
-        readfile($file);
-        exit;
+        $TIPO_DOC = 1;
+        $this->loadModel('Archivo');
+        $archivo = $this->Archivo->find('first', array('conditions' => array('tipo_documento' => $TIPO_DOC)));
+        if($archivo['Archivo']['estado'] == 1) {
+            $file = Router::url('/', true) . 'resource/archivos/'. $archivo['Archivo']['nombre'];
+            //Forzar la descarga
+            header('Content-type: application/pdf');
+            header('Content-Disposition: attachment; filename="Guia.pdf"');
+            readfile($file);
+            exit;
+        } else {
+            $this->redirect(array('controller' => 'home', 'action' => 'index'));
+        }
     }
 
     public function test()
     {
-        $file = Router::url('/', true) . 'resource/archivos/TEST.rtf';
-        //Forzar la descarga
-        $nombre = 'TEST.rtf';
-        header("Content-type: application/msword");
-        header('Content-Disposition: attachment; filename="' . $nombre . '"');
-        readfile($file);
-        exit;
+        $TIPO_DOC = 2;
+        $this->loadModel('Archivo');
+        $archivo = $this->Archivo->find('first', array('conditions' => array('tipo_documento' => $TIPO_DOC)));
+        if($archivo['Archivo']['estado'] == 1) {
+            $file = Router::url('/', true) . 'resource/archivos/'. $archivo['Archivo']['nombre'];
+            //Forzar la descarga
+            header("Content-type: application/msword");
+            header('Content-Disposition: attachment; filename="Test.doc"');
+            readfile($file);
+            exit;
+        } else {
+            $this->redirect(array('controller' => 'home', 'action' => 'index'));
+        }
     }
 } 

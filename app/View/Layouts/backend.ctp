@@ -123,6 +123,14 @@
                                 break;
                             }
                         break;
+                        case "archivos":
+                            echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/user_comment.png' alt='Archivos' />Archivos</a></li>";
+                            switch($action){
+                                case "admin_edit":
+                                    echo "<li class='active'><span>Editar</span></li>";
+                                    break;
+                            }
+                        break;
                         case "reportes":
                             echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/text_document.png' alt='Participantes' />Reportes</a></li>";
                             switch($action){
@@ -192,6 +200,15 @@
                             <li><?= $this->Html->link('Gestion participantes', array('controller' => 'participantes', 'action' => 'index')) ?></li>
                             <li><?= $this->Html->link('Agregar participante', array('controller' => 'participantes', 'action' => 'add')) ?></li>
                         </ul>
+                    </li>
+                    <li <?= $controller == "archivos" || $controller == 'archivos' ? "class='active'" : ""?>>
+                        <a href="/admin/archivos">
+                            <!-- Icon Container -->
+                            <span class="da-nav-icon">
+                                <?= $this->Html->image('../images/icons/black/32/text_document.png', array('alt' => 'archivos')); ?>
+                            </span>
+                            Archivos
+                        </a>
                     </li>
                     <li <?= $controller == "reportes" || $controller == 'reportes' ? "class='active'" : ""?>>
                         <a href="#">
