@@ -33,6 +33,11 @@ class ArchivosController extends AppController {
             $TIPO_DOCUMENTOS = $Validoc->getTipoDocumento();
             $this->set('TIPO_DOCUMENTO', $TIPO_DOCUMENTOS[$archivo['Archivo']['tipo_documento']]);
             $this->set('ESTADOS', $Validoc->getEstado());
+            if($archivo['Archivo']['tipo_documento'] == 1){
+                $this->set('FORMATO_DOCUMENTO', 'Solo formato PDF');
+            } else {
+                $this->set('FORMATO_DOCUMENTO', 'Solo formato DOC');
+            }
         } else {
             $datos = $this->request->data;
             $img_temp = $datos['Archivo']['nombre'];

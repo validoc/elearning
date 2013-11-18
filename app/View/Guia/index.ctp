@@ -1,12 +1,37 @@
 <link rel="stylesheet" type="text/css" href="/css/jquery.bxslider.css" />
+<link rel="stylesheet" type="text/css" href="/css/jquery-ui-1.css"  media="all">
+
 <script src="/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="/js/jquery.bxslider.min.js" type="text/javascript"></script>
 <script>
-    $(document).ready(function(){
-        $('.bxslider').bxSlider({
+    $( document ).ready( function(){
+        var slider = $('.bxslider').bxSlider({
             pager: false,
             moveSlides: 1,
-            infiniteLoop: false
+            infiniteLoop: false,
+            onSlideAfter: function() {
+                var count = slider.getCurrentSlide();
+                count++;
+                if(count >= 1 && count <= 4){
+                    $('#puntero').css('left', '0%');
+                    $('#recorrido').css('width', '0%');
+                } else if(count >= 5 && count <= 8) {
+                    $('#puntero').css('left', '20%');
+                    $('#recorrido').css('width', '20%');
+                } else if(count >= 9 && count <= 22) {
+                    $('#puntero').css('left', '40%');
+                    $('#recorrido').css('width', '40%');
+                } else if(count >= 23 && count <= 31) {
+                    $('#puntero').css('left', '60%');
+                    $('#recorrido').css('width', '60%');
+                } else if(count >= 32 && count <= 65) {
+                    $('#puntero').css('left', '80%');
+                    $('#recorrido').css('width', '80%');
+                } else {
+                    $('#puntero').css('left', '100%');
+                    $('#recorrido').css('width', '100%');
+                }
+            }
         });
     });
 </script>
@@ -354,8 +379,26 @@
                 </div>
             </li>
         </ul>
-        <div class="pasador">
-            <img src="images/pasador.png" alt="Slider">
+        <br/>
+        <div id="wrapper">
+            <div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="scrollbar">
+                <div id="recorrido" style="background-color: #6699cc; height: 0.8em; width: 0%"></div>
+                <a id="puntero" style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a>
+                <span style="top: 20px; position: absolute; font-size: 13px; left: 0%">Slides ></span>
+                <span style="top: 20px; position: absolute; font-size: 13px; left: 19%;">1.</span>
+                <span style="top: 20px; position: absolute; font-size: 13px; left: 21%; max-width: 17%">Principios de la guia de planes de carrera</span>
+                <span style="top: 20px; position: absolute; font-size: 13px; left: 39%;">2.</span>
+                <span style="top: 20px; position: absolute; font-size: 13px; left: 41%; max-width: 17%">Las competencias y la carrera profesional</span>
+                <span style="top: 20px; position: absolute; font-size: 13px; left: 59%;">3.</span>
+                <span style="top: 20px; position: absolute; font-size: 13px; left: 61%; max-width: 17%">Las competencias en los procesos de gestion anuales</span>
+                <span style="top: 20px; position: absolute; font-size: 13px; left: 79%;">4.</span>
+                <span style="top: 20px; position: absolute; font-size: 13px; left: 81%; max-width: 17%">El diccionario de competencias</span>
+            </div>
         </div>
+<!--        <div class="pasador">-->
+<!--            <img src="images/pasador.png" alt="Slider">-->
+<!--        </div>-->
+
     </div>
 </div>
+<br/>

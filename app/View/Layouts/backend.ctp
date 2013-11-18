@@ -68,9 +68,9 @@
             <!-- Header Toolbar Menu -->
             <div id="da-header-toolbar" class="clearfix">
                 <div id="da-user-profile">
-                    <div id="da-user-avatar">
-                        <?= $this->Html->image('../images/profile.jpg', array('alt' => 'Perfil')); ?>
-                    </div>
+<!--                    <div id="da-user-avatar">-->
+<!--                        --><?//= $this->Html->image('../images/profile.jpg', array('alt' => 'Perfil')); ?>
+<!--                    </div>-->
                     <div id="da-user-info">
                         <?= $user['Usuario']['username']?>
                         <span class="da-user-title">Administrador</span>
@@ -98,9 +98,9 @@
                     if($action == "admin_index" || $action == "")
                         $modulo = "class='active'";
                     switch($controller) {
-                        case "consola":
-                            echo "<li $modulo><a href='/admin/$controller'><img src='../images/icons/black/16/home.png' alt='Consola' />Consola</a></li>";
-                        break;
+//                        case "consola":
+//                            echo "<li $modulo><a href='/admin/$controller'><img src='../images/icons/black/16/home.png' alt='Consola' />Consola</a></li>";
+//                        break;
                         case "usuarios":
                             echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/admin_user.png' alt='Usuarios' />Usuarios</a></li>";
                             switch($action){
@@ -167,14 +167,14 @@
             <!-- Main Navigation -->
             <div id="da-main-nav" class="da-button-container">
                 <ul>
-                    <li <?= $controller == "consola" ? "class='active'" : ""?>>
-                        <a href="/admin/consola">
-                                    <span class="da-nav-icon">
-                                        <img alt="Consola" src="/img/../images/icons/black/32/home.png">
-                                    </span>
-                            Consola
-                        </a>
-                    </li>
+<!--                    <li --><?//= $controller == "consola" ? "class='active'" : ""?><!-->
+<!--                        <a href="/admin/consola">-->
+<!--                                    <span class="da-nav-icon">-->
+<!--                                        <img alt="Consola" src="/img/../images/icons/black/32/home.png">-->
+<!--                                    </span>-->
+<!--                            Consola-->
+<!--                        </a>-->
+<!--                    </li>-->
                     <li <?= $controller == "usuarios" || $controller == 'usuarios' ? "class='active'" : ""?>>
                         <a href="#">
                             <!-- Icon Container -->
@@ -242,7 +242,8 @@
 <!-- Footer -->
     <div id="da-footer">
         <div class="da-container clearfix">
-            <p>Copyright 2013. <a href="http://www.validoc.net">Validoc</a> Admin. All Rights Reserved.
+<!--            <p>Copyright 2013. <a href="http://www.validoc.net">Validoc</a> Admin. All Rights Reserved.-->
+            &copy; NovoNordisk Pharma Argentina S.A.
         </div>
     </div>
 </div>

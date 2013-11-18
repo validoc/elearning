@@ -74,7 +74,7 @@ class UsuariosController extends AppController {
                                                                                 'password' => $datos['Usuario']['password'])));
             if (count($usuario) > 0) {
                 $this->Session->write('usuario', $usuario);
-                return $this->redirect(array('controller' => 'consola', 'action' => 'index'));
+                return $this->redirect(array('controller' => 'usuarios', 'action' => 'index'));
             }
             $this->Session->setFlash(__('Usuario o password invalido, Intente de nuevo'));
         }

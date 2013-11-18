@@ -21,7 +21,7 @@ class DownloadController extends AppController {
             $file = Router::url('/', true) . 'resource/archivos/'. $archivo['Archivo']['nombre'];
             //Forzar la descarga
             header('Content-type: application/pdf');
-            header('Content-Disposition: attachment; filename="Guia.pdf"');
+            header('Content-Disposition: attachment; filename="'.$archivo['Archivo']['nombre'].'"');
             readfile($file);
             exit;
         } else {
@@ -38,7 +38,7 @@ class DownloadController extends AppController {
             $file = Router::url('/', true) . 'resource/archivos/'. $archivo['Archivo']['nombre'];
             //Forzar la descarga
             header("Content-type: application/msword");
-            header('Content-Disposition: attachment; filename="Test.doc"');
+            header('Content-Disposition: attachment; filename="'.$archivo['Archivo']['nombre'].'"');
             readfile($file);
             exit;
         } else {

@@ -96,14 +96,26 @@ header {
     width: 1008px;
     height: 282px;
 }
+/*.central_box {*/
+    /*background: url("../images/bg_flotante.png") repeat-x scroll center center #FFFFFF;*/
+    /*border: 2px solid #D0D0D0;*/
+    /*border-radius: 20px;*/
+    /*height: 328px;*/
+    /*left: 14.3%;*/
+    /*position: absolute;*/
+    /*top: 300px;*/
+    /*width: 960px;*/
+/*}*/
 .central_box {
     background: url("../images/bg_flotante.png") repeat-x scroll center center #FFFFFF;
     border: 2px solid #D0D0D0;
     border-radius: 20px;
     height: 328px;
-    left: 14.3%;
+    left: inherit;
     position: absolute;
+    margin-left: -480px;
     top: 300px;
+    left: 50%;
     width: 960px;
 }
 .box {
@@ -182,6 +194,7 @@ footer {
 footer small{
 	font-family: verdana;
 	font-size: 12px;
+
 }
 /*LOGIN*/
 .box_login h3{
