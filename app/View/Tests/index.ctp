@@ -303,7 +303,7 @@
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio">
-                                        <input type="radio" name="respuesta" value="2" p="p2">
+                                        <input type="radio" name="respuesta" value="2" id="p2">
                                         <label for="p2">&nbsp;</label>
                                     </div>
                                     <p>Requisitos competenciales</p>

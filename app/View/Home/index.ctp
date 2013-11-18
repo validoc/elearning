@@ -15,7 +15,7 @@
                 <div class="imagen_box">
                     <a href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>"><img src="/images/icono_imagen.png" alt="Guia de planes"></a>
                 </div>
-                <a href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>" class="btn_azul">VER GUIA</a>
+                <a target="_blank" href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>" class="btn_azul">VER GUIA</a>
                 <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'guia'));?>" class="btn_descargar">Descargar guia</a>
             </div>
             <div class="box box2">
@@ -29,7 +29,7 @@
                 <div class="imagen_box box_dt">
                     <a href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>"><img src="/images/icono_right.png" alt="Test"></a>
                 </div>
-                <a href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>" class="btn_azul">TEST ONLINE</a>
+                <a target="_blank" href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>" class="btn_azul">TEST ONLINE</a>
                 <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'test'));?>" class="btn_descargar">Descargar test</a>
             </div>
         </div>
