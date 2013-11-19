@@ -132,7 +132,7 @@
                             }
                         break;
                         case "reportes":
-                            echo "<li $modulo><a href='/admin/$controller'><img src='/images/icons/black/16/text_document.png' alt='Participantes' />Reportes</a></li>";
+                            echo "<li $modulo><img src='/images/icons/black/16/text_document.png' alt='Participantes' />Reportes</li>";
                             switch($action){
                                 case "admin_ingresos":
                                     echo "<li class='active'><span>R. Ingresos</span></li>";
