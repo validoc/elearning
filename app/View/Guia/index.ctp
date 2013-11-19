@@ -12,26 +12,71 @@
             onSlideAfter: function() {
                 var count = slider.getCurrentSlide();
                 count++;
-                if(count >= 1 && count <= 6){
+                if(count >= 1 && count <= 6) {
+                    inicio = 0;
+                    division = 7-1;
+                    paso = 20 / division;
+                    avance = (count-1) * paso;
                     $('#puntero').css('left', '0%');
-                    $('#recorrido').css('width', '0%');
+                    $('#recorrido').css('width', (inicio+avance)+'%');
                 } else if(count >= 7 && count <= 10) {
+                    inicio = 20;
+                    division = 11-7;
+                    paso = 20 / division;
+                    avance = (count-7) * paso;
                     $('#puntero').css('left', '20%');
-                    $('#recorrido').css('width', '20%');
+                    $('#recorrido').css('width', (inicio+avance)+'%');
                 } else if(count >= 11 && count <= 24) {
+                    inicio = 40;
+                    division = 25-11;
+                    paso = 20 / division;
+                    avance = (count-11) * paso;
                     $('#puntero').css('left', '40%');
-                    $('#recorrido').css('width', '40%');
+                    $('#recorrido').css('width', (inicio+avance)+'%');
                 } else if(count >= 25 && count <= 33) {
+                    inicio = 60;
+                    division = 34-25;
+                    paso = 20 / division;
+                    avance = (count-25) * paso;
                     $('#puntero').css('left', '60%');
-                    $('#recorrido').css('width', '60%');
+                    $('#recorrido').css('width', (inicio+avance)+'%');
                 } else if(count >= 34 && count <= 67) {
+                    inicio = 80;
+                    division = 68-34;
+                    paso = 20 / division;
+                    avance = (count-34) * paso;
                     $('#puntero').css('left', '80%');
-                    $('#recorrido').css('width', '80%');
+                    $('#recorrido').css('width', (inicio+avance)+'%');
                 } else {
                     $('#puntero').css('left', '100%');
                     $('#recorrido').css('width', '100%');
                 }
             }
+        });
+
+        $('#slider_0').click(function(){
+            slider.goToSlide(0);
+            return false;
+        });
+
+        $('#slider_1').click(function(){
+            slider.goToSlide(6);
+            return false;
+        });
+
+        $('#slider_2').click(function(){
+            slider.goToSlide(10);
+            return false;
+        });
+
+        $('#slider_3').click(function(){
+            slider.goToSlide(24);
+            return false;
+        });
+
+        $('#slider_4').click(function(){
+            slider.goToSlide(33);
+            return false;
         });
     });
 </script>
@@ -384,15 +429,25 @@
             <div class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="scrollbar">
                 <div id="recorrido" style="background-color: #6699cc; height: 0.8em; width: 0%"></div>
                 <a id="puntero" style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a>
-                <span style="top: 20px; position: absolute; font-size: 13px; left: 0%">Slides ></span>
-                <span style="top: 20px; position: absolute; font-size: 13px; left: 19%;">1.</span>
-                <span style="top: 20px; position: absolute; font-size: 13px; left: 21%; max-width: 17%">Principios de la guia de planes de carrera</span>
-                <span style="top: 20px; position: absolute; font-size: 13px; left: 39%;">2.</span>
-                <span style="top: 20px; position: absolute; font-size: 13px; left: 41%; max-width: 17%">Las competencias y la carrera profesional</span>
-                <span style="top: 20px; position: absolute; font-size: 13px; left: 59%;">3.</span>
-                <span style="top: 20px; position: absolute; font-size: 13px; left: 61%; max-width: 17%">Las competencias en los procesos de gestion anuales</span>
-                <span style="top: 20px; position: absolute; font-size: 13px; left: 79%;">4.</span>
-                <span style="top: 20px; position: absolute; font-size: 13px; left: 81%; max-width: 17%">El diccionario de competencias</span>
+                <a href="" id="slider_0">
+                    <span style="top: 20px; position: absolute; font-size: 13px; left: 0%">Slides ></span>
+                </a>
+                <a href="" id="slider_1">
+                    <span style="top: 20px; position: absolute; font-size: 13px; left: 19%;">1.</span>
+                    <span style="top: 20px; position: absolute; font-size: 13px; left: 21%; max-width: 17%">Principios de la guia de planes de carrera</span>
+                </a>
+                <a href="" id="slider_2">
+                    <span style="top: 20px; position: absolute; font-size: 13px; left: 39%;">2.</span>
+                    <span style="top: 20px; position: absolute; font-size: 13px; left: 41%; max-width: 17%">Las competencias y la carrera profesional</span>
+                </a>
+                <a href="" id="slider_3">
+                    <span style="top: 20px; position: absolute; font-size: 13px; left: 59%;">3.</span>
+                    <span style="top: 20px; position: absolute; font-size: 13px; left: 61%; max-width: 17%">Las competencias en los procesos de gestion anuales</span>
+                </a>
+                <a href="" id="slider_4">
+                    <span style="top: 20px; position: absolute; font-size: 13px; left: 79%;">4.</span>
+                    <span style="top: 20px; position: absolute; font-size: 13px; left: 81%; max-width: 17%">El diccionario de competencias</span>
+                </a>
             </div>
         </div>
 <!--        <div class="pasador">-->
