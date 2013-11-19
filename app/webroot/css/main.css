@@ -189,12 +189,13 @@ footer {
     border-bottom: 5px solid #E1E1E1;
     margin: 0 0 40px;
     padding: 0 0 15px;
+    z-index: 999999;
+    position: relative;
     text-align: center;
 }
 footer small{
 	font-family: verdana;
 	font-size: 12px;
-
 }
 /*LOGIN*/
 .box_login h3{
