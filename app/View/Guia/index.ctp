@@ -12,19 +12,19 @@
             onSlideAfter: function() {
                 var count = slider.getCurrentSlide();
                 count++;
-                if(count >= 1 && count <= 4){
+                if(count >= 1 && count <= 6){
                     $('#puntero').css('left', '0%');
                     $('#recorrido').css('width', '0%');
-                } else if(count >= 5 && count <= 8) {
+                } else if(count >= 7 && count <= 10) {
                     $('#puntero').css('left', '20%');
                     $('#recorrido').css('width', '20%');
-                } else if(count >= 9 && count <= 22) {
+                } else if(count >= 11 && count <= 24) {
                     $('#puntero').css('left', '40%');
                     $('#recorrido').css('width', '40%');
-                } else if(count >= 23 && count <= 31) {
+                } else if(count >= 25 && count <= 33) {
                     $('#puntero').css('left', '60%');
                     $('#recorrido').css('width', '60%');
-                } else if(count >= 32 && count <= 65) {
+                } else if(count >= 34 && count <= 67) {
                     $('#puntero').css('left', '80%');
                     $('#recorrido').css('width', '80%');
                 } else {
@@ -38,11 +38,11 @@
 <div class="content content_guia">
     <div class="slider  slider_test">
         <ul class="bxslider">
-<!--            <li>-->
-<!--                <div class="box_slider box_test">-->
-<!--                    <img src="/resource/guias/01.jpg" alt="guia de planes">-->
-<!--                </div>-->
-<!--            </li>-->
+            <li>
+                <div class="box_slider box_test">
+                    <a target="_blank" href="/video/index/1"><img src="/resource/guias/01.jpg" alt="guia de planes"></a>
+                </div>
+            </li>
             <li>
                 <div class="box_slider box_test">
                     <img src="/resource/guias/02.jpg" alt="guia de planes">
@@ -63,11 +63,11 @@
                     <img src="/resource/guias/05.jpg" alt="guia de planes">
                 </div>
             </li>
-<!--            <li>-->
-<!--                <div class="box_slider box_test">-->
-<!--                    <img src="/resource/guias/06.jpg" alt="guia de planes">-->
-<!--                </div>-->
-<!--            </li>-->
+            <li>
+                <div class="box_slider box_test">
+                    <a target="_blank" href="/video/index/2"><img src="/resource/guias/06.jpg" alt="guia de planes"></a>
+                </div>
+            </li>
             <li>
                 <div class="box_slider box_test">
                     <img src="/resource/guias/07.jpg" alt="guia de planes">
