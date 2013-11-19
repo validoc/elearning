@@ -292,6 +292,7 @@ body#guia{
 }
 footer#guia{
 	border-bottom: none;
+    position: relative;
 }
 ul.bxslider li{
 	background-color: #eeeeee;
