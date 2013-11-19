@@ -21,8 +21,6 @@
         <div class="da-form-row">
             <label>Nombre</label>
             <div class="da-form-item default">
-                <span class="formNote"><?= $FORMATO_DOCUMENTO ?></span>
-<!--                --><?//= $this->Form->input('nombre'); ?>
                 <?= $this->Form->input('nombre', array('class' => 'da-custom-file', 'type' => 'file','label' => false, 'div' => false)); ?>
             </div>
         </div>
