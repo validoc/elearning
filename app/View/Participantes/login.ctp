@@ -19,13 +19,12 @@
                 <img src="/images/login_degrade.png" alt="Login">
             </h3>
             <small>Usuario</small>
-            <?= $this->Form->input('nombre', array('class' => 'first field_required')); ?>
+            <?= $this->Form->input('nombre', array('id' => 'btnuser', 'class' => 'first field_required')); ?>
             <br/>
             <small style="margin: 30px 0 0 0;">Password</small>
-            <?= $this->Form->input('iniciales', array('type' => 'password', 'class' => 'field_required')); ?>
+            <?= $this->Form->input('iniciales', array('id' => 'btnpass', 'type' => 'password', 'class' => 'field_required')); ?>
             <a style="cursor: pointer" class="btn_azul" id="submit">INGRESAR</a>
             <?= ( isset($mensaje) ? "<span class='error'>$mensaje</span>" : '')?>
-
         </div>
         <div class="sombra"></div>
         </form>
@@ -36,6 +35,20 @@
         $("#submit").click(function(e) {
             e.preventDefault();
             $("#form_participante").submit();
+        });
+
+        $( "#btnuser" ).keypress(function(ev) {
+            var keycode = (ev.keyCode ? ev.keyCode : ev.which);
+            if(keycode == '13') {
+                $("#submit").trigger('click');
+            }
+        });
+
+        $( "#btnpass" ).keypress(function(ev) {
+            var keycode = (ev.keyCode ? ev.keyCode : ev.which);
+            if(keycode == '13') {
+                $("#submit").trigger('click');
+            }
         });
 
         //Validate
