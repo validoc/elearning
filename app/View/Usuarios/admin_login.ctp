@@ -69,10 +69,10 @@
                     </div>
                 </form>
             </div>
-            <div id="da-login-box-footer">
-            	<a href="#">forgot your password?</a>
-                <div id="da-login-tape"></div>
-            </div>
+<!--            <div id="da-login-box-footer">-->
+<!--            	<a href="#">forgot your password?</a>-->
+<!--                <div id="da-login-tape"></div>-->
+<!--            </div>-->
         </div>
     	<div id="da-login-bottom-shadow"></div>
     </div>

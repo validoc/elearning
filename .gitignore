@@ -15,6 +15,11 @@ app/webroot/resource/guias/*.jpg
 app/webroot/resource/archivos/*.pdf
 app/webroot/resource/archivos/*.rtf
 app/webroot/resource/archivos/*.xls
+app/webroot/resource/archivos/*.xlsx
+app/webroot/resource/archivos/*.ppt
+app/webroot/resource/archivos/*.pptx
+app/webroot/resource/archivos/*.doc
+app/webroot/resource/archivos/*.docx
 
 
 # ARCHIVOS IDE
