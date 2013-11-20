@@ -94,12 +94,65 @@ ALTER TABLE respuestas
     ON UPDATE RESTRICT;
 
 /* Data for table "archivos" */
+INSERT INTO archivos (id, created, modified, nombre, tipo_documento, estado) VALUES
+  (1, '2013-11-16 10:08:21', '2013-11-19 11:22:29', 'guia.pdf', 1, 1),
+  (2, '2013-11-16 10:08:55', '2013-11-19 11:22:07', 'test.doc', 2, 1);
 
 
 /* Data for table "participantes" */
 INSERT INTO participantes (id, created, modified, nombre, iniciales, tipo_participante) VALUES
-  (2, '2013-11-13 15:53:42', '2013-11-13 15:53:42', 'ALLIEVI Gustavo Enrique', 'GUEA', 2),
-  (3, '2013-11-13 17:45:00', '2013-11-13 17:45:00', 'tt', 'tt', 2);
+(1, '2013-11-13 14:28:12', '2013-11-13 14:28:12', 'ALLIEVI Gustavo Enrique', 'GUEA', 2),
+(2, '2013-11-13 14:28:37', '2013-11-13 14:28:37', 'ANTONACI Gustavo Gabriel', 'GTVA', 1),
+(3, '2013-11-16 11:00:25', '2013-11-16 11:00:25', 'CAIAFA Pedro Antonio', 'PDCF', 1),
+(4, '2013-11-16 11:00:45', '2013-11-18 17:15:58', 'CHIESA Ana Inés', 'AAIC', 2),
+(5, '2013-11-18 09:12:10', '2013-11-18 09:12:10', 'Mariano Moro', 'beeay', 2),
+(6, '2013-11-18 10:01:25', '2013-11-18 11:03:42', 'Adrian Perez', 'APEREZ', 1),
+(7, '2013-11-18 18:37:48', '2013-11-18 18:37:48', 'ARENA Gabriela Estela', 'GEAR', 1),
+(8, '2013-11-18 18:38:32', '2013-11-18 18:38:32', 'ARAUJO Rodrigo Carlos', 'RCAO', 1),
+(9, '2013-11-18 18:39:24', '2013-11-18 18:39:24', 'ARIAS TORRECILLAS Ramiro', 'RATO', 1),
+(10, '2013-11-18 18:40:04', '2013-11-18 18:40:04', 'AVACA Lucas Matías', 'LMAV', 1),
+(11, '2013-11-18 18:40:34', '2013-11-18 18:40:34', 'BLOISE Carlos Dario', 'CADB', 1),
+(12, '2013-11-18 18:41:02', '2013-11-18 18:41:02', 'BOURREN Gilda', 'GIBO', 1),
+(13, '2013-11-18 18:41:27', '2013-11-18 18:41:27', 'CORBO Pablo Miguel', 'PAMC', 1),
+(14, '2013-11-18 18:41:51', '2013-11-18 18:41:51', 'COSTA Ruben Alberto', 'RACO', 1),
+(15, '2013-11-18 18:42:19', '2013-11-18 18:42:19', 'DEL ZOTTO Gabriela María', 'ADZ', 2),
+(16, '2013-11-18 18:43:04', '2013-11-18 18:43:04', 'ECHEVERRIA Raul Guillermo', 'RGE', 2),
+(17, '2013-11-18 18:43:43', '2013-11-18 18:43:43', 'FERREYRA Shyla', 'SFRR', 1),
+(18, '2013-11-18 18:44:23', '2013-11-18 18:44:23', 'FLORES Javier Gualberto', 'JAGF', 1),
+(19, '2013-11-18 18:44:56', '2013-11-18 18:44:56', 'GARCIA Horacio', 'HORG', 1),
+(20, '2013-11-18 18:45:26', '2013-11-18 18:45:26', 'GINES Mariana Lorena', 'MGNE', 1),
+(21, '2013-11-18 18:45:48', '2013-11-18 18:45:48', 'GUGLIELMINI Favio Cesar', 'FCGU', 1),
+(22, '2013-11-18 18:46:18', '2013-11-18 18:46:18', 'HERDEGEN Alejandro', 'AJHE', 2),
+(23, '2013-11-18 18:46:43', '2013-11-18 18:46:43', 'JOHNSON Enrique Abel', 'EAJO', 1),
+(24, '2013-11-18 18:47:09', '2013-11-18 18:47:09', 'KALIKIES Ariel Gerardo', 'AIEK', 2),
+(25, '2013-11-18 18:47:43', '2013-11-18 18:47:43', 'KIRSZNER Sandra Edith', 'SEDK', 1),
+(26, '2013-11-18 18:48:23', '2013-11-18 18:48:23', 'LAGUNA Miguel Angel', 'MIGL', 1),
+(27, '2013-11-18 18:48:53', '2013-11-18 18:48:53', 'LANGONE Axel', 'AXCL', 1),
+(28, '2013-11-18 18:49:40', '2013-11-18 18:49:40', 'LOBIANCO Mariano', 'MLCX', 1),
+(29, '2013-11-18 18:50:22', '2013-11-18 18:50:22', 'LUSSO Mariano Raul', 'LMSS', 2),
+(30, '2013-11-18 18:50:52', '2013-11-18 18:50:52', 'MALDONADO Florencia', 'FMDD', 1),
+(31, '2013-11-18 18:51:34', '2013-11-18 18:51:34', 'MAROCHI Maria Florencia', 'MMHI', 1),
+(32, '2013-11-18 18:52:01', '2013-11-18 18:52:01', 'MAZZONI Diego Nazareno', 'DIEM', 1),
+(33, '2013-11-18 18:52:51', '2013-11-18 18:52:51', 'MASTROMARINI Gustavo Daniel', 'GVOM', 1),
+(34, '2013-11-18 18:53:24', '2013-11-18 18:53:24', 'MEONI Jorgelina Leticia', 'JLME', 1),
+(35, '2013-11-18 18:54:17', '2013-11-18 18:54:17', 'MERLINI Oscar Norberto', 'OCME', 1),
+(36, '2013-11-18 18:54:48', '2013-11-18 18:54:48', 'MIGUEZ Fernando Rodrigo', 'FRMZ', 1),
+(37, '2013-11-18 18:55:16', '2013-11-18 18:55:16', 'MIRANDA Adolfo Ariel', 'ARMI', 1),
+(38, '2013-11-18 18:55:48', '2013-11-18 18:55:48', 'MONTENEGRO Carlos Marcelo', 'MCRM', 1),
+(39, '2013-11-18 18:56:18', '2013-11-18 18:56:18', 'MOYANO Carlos Alberto', 'CMOY', 1),
+(40, '2013-11-18 18:57:01', '2013-11-18 18:57:01', 'NICOMEDES Jorge Daniel', 'JDNI', 1),
+(41, '2013-11-18 18:57:44', '2013-11-18 18:57:44', 'PICO Carlos Norberto', 'CNPI', 1),
+(42, '2013-11-18 18:58:19', '2013-11-18 18:58:19', 'RAFFIN Bruno José', 'BRAF', 1),
+(43, '2013-11-18 18:58:52', '2013-11-18 18:58:52', 'ROSSI Diana Beatriz', 'DBZR', 1),
+(44, '2013-11-18 18:59:38', '2013-11-18 18:59:38', 'RUATA Fabián Oscar', 'FBRT', 1),
+(45, '2013-11-18 19:00:19', '2013-11-18 19:00:19', 'RUHLMANN Martin', 'MRUH', 2),
+(46, '2013-11-18 19:01:00', '2013-11-18 19:01:00', 'SANABRIA Dario Gabriel', 'DASN', 1),
+(47, '2013-11-18 19:01:31', '2013-11-18 19:01:31', 'SANZ Osvaldo Raul', 'ORS', 2),
+(48, '2013-11-18 19:02:01', '2013-11-18 19:02:01', 'SCORDO Osvaldo Marcelo', 'OSSC', 1),
+(49, '2013-11-18 19:02:40', '2013-11-18 19:02:40', 'SOSA Maria Evangelina', 'MESO', 1),
+(50, '2013-11-18 19:03:22', '2013-11-18 19:03:22', 'TUSMAN German Eduardo', 'GTUS', 1),
+(51, '2013-11-18 19:03:48', '2013-11-18 19:03:48', 'ZATON Fernando Mario', 'FMZ', 2),
+(52, '2013-11-18 19:04:16', '2013-11-18 19:04:16', 'Fernando Marcia', 'FEM', 2);
 
 
 /* Data for table "preguntas" */
