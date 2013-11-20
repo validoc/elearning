@@ -14,7 +14,7 @@ class TestsController extends AppController {
 
     public function index() {
         $this->set('title_page', '.:: TEST ::.');
-        $this->set('title_front', '<h3><img src="images/ltest1.png" alt="Test"></h3>');
+        $this->set('title_front', '<h3><img src="images/chang3.png" alt="Test"></h3>');
         $this->loadModel('Respuesta');
         $this->loadModel('Pregunta');
         $participante = $this->Session->read('participante');

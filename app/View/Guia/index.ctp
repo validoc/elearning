@@ -85,7 +85,13 @@
         <ul class="bxslider">
             <li>
                 <div class="box_slider box_test">
-                    <a target="_blank" href="/video/index/1"><img src="/resource/guias/01.jpg" alt="guia de planes"></a>
+                    <div class="video_title_1">
+                        <img src="/images/chang6.png" alt="Video"/>
+                    </div>
+                    <a target="_blank" href="/video/index/2" class="sample_video"><img src="/images/sample_video1.png" alt="guia de planes"></a>
+                    <div class="btnv">
+                        <a target="_blank" href="<?= $this->Html->url(array('controller' => 'video', 'action' => '/index/2'));?>" class="btn_azul btn_azul_center">VER VIDEO</a>
+                    </div>
                 </div>
             </li>
             <li>
@@ -110,7 +116,13 @@
             </li>
             <li>
                 <div class="box_slider box_test">
-                    <a target="_blank" href="/video/index/2"><img src="/resource/guias/06.jpg" alt="guia de planes"></a>
+                    <div class="video_title_1">
+                        <img src="/images/chang7.png" alt="Video"/>
+                    </div>
+                    <a target="_blank" href="/video/index/1" class="sample_video"><img src="/images/sample_video3.png" alt="guia de planes"></a>
+                    <div class="btnv">
+                        <a target="_blank" href="<?= $this->Html->url(array('controller' => 'video', 'action' => '/index/1'));?>" class="btn_azul btn_azul_center">VER VIDEO</a>
+                    </div>
                 </div>
             </li>
             <li>

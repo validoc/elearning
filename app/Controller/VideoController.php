@@ -15,14 +15,15 @@ class VideoController extends AppController {
     public function index($valor = null) {
         $this->layout = 'frontend2';
         $this->set('title_page', '.:: VIDEO ::.');
-        $this->set('title_front', '<span>Video 1</span>');
         $this->set('ERROR', '');
         if($valor != null) {
             if($valor >= 1 && $valor <= 2) {
                 if($valor == 1) {
+                    $this->set('title_front', '<span><img src="/images/chang8.png" alt="Video Federico Grayeb"/></span>');
                     $nombre = 'video1.mp4';
                     $imagen = 'sample_video.png';
                 } else {
+                    $this->set('title_front', '<span><img src="/images/chang9.png" alt="Video Modelo de Competencias"/></span>');
                     $nombre = 'video2.mp4';
                     $imagen = 'sample_video2.png';
                 }

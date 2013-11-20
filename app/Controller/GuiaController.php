@@ -15,6 +15,6 @@ class GuiaController extends AppController {
     public function index() {
         $this->layout = 'frontend2';
         $this->set('title_page', '.:: GUIA ::.');
-        $this->set('title_front', '<h3><img src="images/lguiap.png" alt="Guia"></h3>');
+        $this->set('title_front', '<h3><img src="images/chang5.png" alt="Guia"></h3>');
     }
 } 

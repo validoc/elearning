@@ -6,31 +6,30 @@
         <div class="boxes">
             <div class="box box1">
                 <h3>
-                    <img src="images/lguia.png" alt="Guia de planes">
+                    <img src="images/chang2.png" alt="Guia de planes">
                 </h3>
                 <p>
-                    Bajada sobre lo que se va a ver <br />
-                    en estos slides.
+                    <img src="images/chang1.png" alt="Guia de planes">
                 </p>
                 <div class="imagen_box">
                     <a target="_blank" href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>"><img src="/images/icono_imagen.png" alt="Guia de planes"></a>
                 </div>
-                <a target="_blank" href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>" class="btn_azul">VER GUIA</a>
+                <a target="_blank" href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>" class="btn_azul">Click para ver Guia</a>
                 <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'guia'));?>" class="btn_descargar">Descargar guia</a>
             </div>
             <div class="box box2">
                 <h3>
-                    <img src="images/ltest.png" alt="Test">
+                    <img src="images/chang3.png" alt="Cuestionario">
                 </h3>
                 <p>
-                    Bajada sobre lo que se va a ver <br />
-                    en estos slides.
+                    Comprueba los conocimientos que has adquirido, <br />
+                    haciendo Click aqu&#237; y respondiendo a las siguientes preguntas
                 </p>
                 <div class="imagen_box box_dt">
                     <a target="_blank" href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>"><img src="/images/icono_right.png" alt="Test"></a>
                 </div>
-                <a target="_blank" href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>" class="btn_azul">TEST ONLINE</a>
-                <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'test'));?>" class="btn_descargar">Descargar test</a>
+                <a target="_blank" href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>" class="btn_azul btn_azul_m">Click para ver <br/>Cuestionario On Line</a>
+                <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'test'));?>" class="btn_descargar btn_descargar_m">Descargar Cuestionario</a>
             </div>
         </div>
         <div class="box box_videos">
