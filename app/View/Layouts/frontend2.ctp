@@ -5,7 +5,8 @@
     <title><?= $title_page; ?></title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/styles.css">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <script src="http://api.html5media.info/1.1.6/html5media.min.js"></script>
+    <!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
 </head>
 <!--[if lt IE 9]>
 <link rel="stylesheet" href="/css/stylesie.css">
