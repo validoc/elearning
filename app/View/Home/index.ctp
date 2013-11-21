@@ -14,8 +14,8 @@
                 <div class="imagen_box">
                     <a target="_blank" href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>"><img src="/images/icono_imagen.png" alt="Guia de planes"></a>
                 </div>
-                <a target="_blank" href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>" class="btn_azul">Click para ver Guia</a>
-                <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'guia'));?>" class="btn_descargar">Descargar guia</a>
+                <a target="_blank" href="<?= $this->Html->url(array('controller' => 'guia', 'action' => 'index'));?>" class="btn_azul">Click para ver Gu&#237;a</a>
+                <a href="<?= $this->Html->url(array('controller' => 'download', 'action' => 'guia'));?>" class="btn_descargar">Descargar Gu&#237;a</a>
             </div>
             <div class="box box2">
                 <h3>

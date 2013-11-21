@@ -5,6 +5,8 @@
     <title><?= $title_page; ?></title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/styles.css">
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
     <?php
         echo $this->Html->script('jquery-1.7.2.min');
         echo $this->fetch('meta');
