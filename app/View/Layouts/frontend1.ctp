@@ -15,6 +15,9 @@
     ?>
 </head>
 <!--[if lt IE 9]>
+    <link rel="stylesheet" href="/css/stylesie.css">
+<![endif]-->
+<!--[if lt IE 9]>
 <script type="text/javascript">
     document.createElement("nav");
     document.createElement("header");

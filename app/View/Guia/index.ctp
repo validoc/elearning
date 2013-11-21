@@ -2,8 +2,6 @@
 <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
 <link rel="stylesheet" type="text/css" href="/css/jquery-ui-1.css"  media="all">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0">
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
 <script src="/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="/js/jquery.bxslider.min.js" type="text/javascript"></script>
 <script>

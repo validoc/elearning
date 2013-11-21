@@ -24,7 +24,7 @@
 <body id="guia">
     <header class="guia">
         <div class="content_headerg">
-            <div class="logo_left">
+            <div class="logo_left logo_left_m">
                 <a href="#"><img src="/images/logo_left.png" alt="novo nordisk"></a>
             </div>
             <div class="center_header">
