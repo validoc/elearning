@@ -6,9 +6,9 @@ img{
 /* iPads (portrait and landscape) (DESDE 768PX HASTA 1024PX VA SER DE COLOR ROJO) ----------- */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
  	
-	/*body#guia {
+	/*body {
  		background-color: red;
- 	} */  
+ 	}*/   
 	.sombra_home {
     	left: 34px;
 	}
@@ -21,7 +21,7 @@ img{
 	}
 }
 @media only screen and (max-width : 768px) {
-	/*body#guia {
+	/*body {
  		background-color: blue;
  	}*/
  	.content_guia {
@@ -45,14 +45,60 @@ img{
 	.sombra_home {
     	left: 10px;
 	}
+	/*LOGIN*/
 	.content {
 		margin: 0 auto 15%;
+		width: 100%;
 	}	
 	.content_headerg {
 	    margin: 0 auto;
 	    width: 100%;
 	}
-}
+	.content_header {
+ 		width: 100%;
+	}
+	.center_imagen {
+		width: 100%;
+	}	
+	.content .central_box {
+	    left: 515px;
+	    top: 251px;
+	    width: 693px;
+	}
+	.form {
+	    left: 175px;
+	}
+
+	.sombra {
+    background: url("../images/sombra_box.png") no-repeat scroll center center / 608px auto rgba(0, 0, 0, 0);
+    height: 30px;
+    left: -154px;
+    position: absolute;
+    top: 324px;
+    width: 960px;
+	}
+
+	/*HOME*/
+	.boxes {
+    	width: 100%;
+	}
+	.box {
+		width: 315px;
+	}
+	.box p {
+    	font-size: 8px;
+    }
+	a.btn_azul {
+ 		margin: 0 0 10px 57px;
+	}
+	a.btn_descargar {
+		margin: 0 0 0 56px;
+	}
+	.content .sombra_home {
+		left: -120px;
+		top: 577px;
+	}
+}    
 /* iPads (portrait) (HASTA 768PX COLOR AZUL)  ----------- */
 @media only screen and (max-width : 768px) {
       
