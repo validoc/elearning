@@ -5,7 +5,10 @@
     <title><?= $title_page; ?></title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/styles.css">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
+    <script src="/js/jquery-latest.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="/js/selectivizr-min.js"></script>
+    <![endif]-->
 </head>
 <!--[if lt IE 9]>
 <link rel="stylesheet" href="/css/stylesie.css">
