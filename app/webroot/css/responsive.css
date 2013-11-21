@@ -6,9 +6,9 @@ img{
 /* iPads (portrait and landscape) (DESDE 768PX HASTA 1024PX VA SER DE COLOR ROJO) ----------- */
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
  	
-	/*body {
- 		background-color: red;
- 	}*/   
+	/*body {*/
+ 		/*background-color: red;*/
+ 	/*}*/
 	.sombra_home {
     	left: 34px;
 	}
@@ -19,11 +19,14 @@ img{
 	body#guia .content_guia {
     	margin: 0 auto 17%;
 	}
+    .content {
+        margin: 0 auto 140px;
+    }
 }
 @media only screen and (max-width : 768px) {
-	/*body {
- 		background-color: blue;
- 	}*/
+	/*body {*/
+ 		/*background-color: blue;*/
+ 	/*}*/
  	.content_guia {
     	width: 100%;
 	}
