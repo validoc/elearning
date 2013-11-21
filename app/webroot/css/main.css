@@ -156,8 +156,9 @@ a.btn_descargar {
     border-radius: 4px;
     color: #FFFFFF;
     display: block;
-    font-family: tblack;
-    font-size: 14px;
+    font-family: tverdana;
+    font-size: 12px;
+    font-weight: bold;
     height: 26px;
     margin: 0 0 0 124px;
     padding: 7px 0 0;
@@ -191,7 +192,7 @@ footer {
     margin: 0 0 40px;
     padding: 0 0 15px;
     z-index: 999999;
-    position: relative;
+    /*position: relative;*/
     text-align: center;
 }
 footer small{
@@ -292,8 +293,10 @@ body#guia{
 	background-color: #eeeeee;
 }
 footer#guia{
-	border-bottom: none;
+    border-bottom: medium none;
     position: relative;
+    text-align: center;
+    width: 100%;
 }
 ul.bxslider li{
 	background-color: #eeeeee;
@@ -370,7 +373,7 @@ ul.bxslider li p.gp b{
     width: 375px;
 }
 .preguntas a.btn_azul {
-	margin: 0 0 10px 27px;
+	margin: 0 0 10px 45px;
 }
 .box_test h6{
 	text-align: center;
@@ -467,12 +470,12 @@ ul.bxslider li p.gp b{
     margin: 32px 0 0 38px;
 }
 .respuesta_correcta a.btn_azul {
-    left: 38%;
+    left: 24%;
     position: absolute;
     top: 95%;
 }
 .respuesta_incorrecta a.btn_azul {
-    left: 38%;
+    left: 25%;
     position: absolute;
     top: 95%;
     font-size: 14px;
@@ -578,10 +581,10 @@ input[type=radio]{
     width: 200px;
 }
 .box2 .btn_descargar_m {
-    font-size: 13px;
-    padding: 7px 0 0 10px;
+    font-size: 12px;
+    padding: 7px 0 0 16px;
     text-align: left;
-    width: 190px;
+    width: 184px;
 }
 .video_title_1 {
     margin: 40px 0 55px 0;

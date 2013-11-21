@@ -1,0 +1,10 @@
+label{
+	display: none;
+}
+input[type="radio"] {
+    display: block;
+}
+.radio {
+    float: left;
+    margin: 5px 9px 0 0;
+}

@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="/css/styles.css">
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">-->
 </head>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="/css/stylesie.css">
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript">
+    document.createElement("nav");
+    document.createElement("header");
+    document.createElement("footer");
+    document.createElement("section");
+    document.createElement("article");
+    document.createElement("aside");
+    document.createElement("hgroup");
+</script>
+<![endif]-->
 <body id="guia">
     <header class="guia">
         <div class="content_headerg">

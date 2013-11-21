@@ -22,8 +22,7 @@
                     <img src="images/chang3.png" alt="Cuestionario">
                 </h3>
                 <p>
-                    Comprueba los conocimientos que has adquirido, <br />
-                    haciendo Click aqu&#237; y respondiendo a las siguientes preguntas
+                    <img src="images/chang10.png" alt="Cuestionario"/>
                 </p>
                 <div class="imagen_box box_dt">
                     <a target="_blank" href="<?= $this->Html->url(array('controller' => 'tests', 'action' => 'index'));?>"><img src="/images/icono_right.png" alt="Test"></a>
