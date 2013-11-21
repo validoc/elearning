@@ -582,9 +582,12 @@ input[type=radio]{
 }
 .box2 .btn_descargar_m {
     font-size: 12px;
-    padding: 7px 0 0 16px;
+    padding: 7px 0 0 12px;
     text-align: left;
-    width: 184px;
+    width: 189px;
+    /*background: url("../images/btn_d.png") no-repeat center;*/
+    /*width: 200px;*/
+    /*height: 30px;*/
 }
 .video_title_1 {
     margin: 40px 0 55px 0;
