@@ -10,7 +10,9 @@
                        data-setup="{}"
                        poster="/images/<?= $imagen?>"
                     >
-                    <source src="/resource/videos/<?= $nombre?>" type='video/mp4' />
+                    <source src="/resource/videos/<?= $nombre?>.mp4" type='video/mp4' />
+                    <source src="/resource/videos/<?= $nombre?>.webm" type='video/webm' />
+                    <source src="/resource/videos/<?= $nombre?>.ogv" type='video/ogg' />
                 </video>
             <?php else: ?>
                 <h1><?= $ERROR?></h1>

@@ -20,11 +20,11 @@ class VideoController extends AppController {
             if($valor >= 1 && $valor <= 2) {
                 if($valor == 1) {
                     $this->set('title_front', '<span><img src="/images/chang8.png" alt="Video Federico Grayeb"/></span>');
-                    $nombre = 'video1.mp4';
+                    $nombre = 'video1';
                     $imagen = 'sample_video.png';
                 } else {
                     $this->set('title_front', '<span><img src="/images/chang9.png" alt="Video Modelo de Competencias"/></span>');
-                    $nombre = 'video2.mp4';
+                    $nombre = 'video2';
                     $imagen = 'sample_video2.png';
                 }
                 $this->set('nombre', $nombre);

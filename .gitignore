@@ -15,6 +15,7 @@ app/webroot/resource/videos/*.mp4
 app/webroot/resource/videos/*.swf
 app/webroot/resource/videos/*.webm
 app/webroot/resource/videos/*.ogg
+app/webroot/resource/videos/*.ogv
 
 app/webroot/resource/guias/*.jpg
 
