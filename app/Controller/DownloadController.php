@@ -19,11 +19,12 @@ class DownloadController extends AppController {
         $archivo = $this->Archivo->find('first', array('conditions' => array('tipo_documento' => $TIPO_DOC)));
         if($archivo['Archivo']['estado'] == 1) {
             $file = Router::url('/', true) . 'resource/archivos/'. $archivo['Archivo']['nombre'];
-            $Validoc = $Validoc = $this->Components->load('Validoc');
-            $content_type = $Validoc->mime_content_type($archivo['Archivo']['nombre']);
+//            $Validoc = $Validoc = $this->Components->load('Validoc');
+//            $content_type = $Validoc->mime_content_type($archivo['Archivo']['nombre']);
             //Forzar la descarga
-            header('Content-type: '.$content_type.'');
-            header('Content-Disposition: attachment; filename="'.$archivo['Archivo']['nombre'].'"');
+//            header('Content-type: '.$content_type.'');
+            header('Content-type: application/pdf');
+            header('Content-Disposition: attachment; filename="Guia de Planes de Carrera e-learning 2013.pdf"');
             readfile($file);
             exit;
         } else {
@@ -38,11 +39,12 @@ class DownloadController extends AppController {
         $archivo = $this->Archivo->find('first', array('conditions' => array('tipo_documento' => $TIPO_DOC)));
         if($archivo['Archivo']['estado'] == 1) {
             $file = Router::url('/', true) . 'resource/archivos/'. $archivo['Archivo']['nombre'];
-            $Validoc = $Validoc = $this->Components->load('Validoc');
-            $content_type = $Validoc->mime_content_type($archivo['Archivo']['nombre']);
+//            $Validoc = $Validoc = $this->Components->load('Validoc');
+//            $content_type = $Validoc->mime_content_type($archivo['Archivo']['nombre']);
             //Forzar la descarga
-            header('Content-type: '.$content_type.'');
-            header('Content-Disposition: attachment; filename="'.$archivo['Archivo']['nombre'].'"');
+//            header('Content-type: '.$content_type.'');
+            header('Content-type: application/pdf');
+            header('Content-Disposition: attachment; filename="Cuestionario.pdf"');
             readfile($file);
             exit;
         } else {
