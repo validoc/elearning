@@ -1,12 +1,12 @@
 <div class="content content_guia">
     <div class="box_video">
-        <div class="embeddedVideo" style="text-align: center; padding-top: 30px;">
+        <div class="embeddedVideo" style="text-align: center; padding-top: 30px; margin-left: 20px;">
             <?php if($ERROR == '') :?>
                 <video id="example_video_1"
                        class="video-js vjs-default-skin"
                        controls preload="none"
-                       width="900"
-                       height="500"
+                       width="856"
+                       height="480"
                        data-setup="{}"
                        poster="/images/<?= $imagen?>"
                     >
