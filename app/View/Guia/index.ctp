@@ -52,6 +52,12 @@
                     $('#puntero').css('left', '100%');
                     $('#recorrido').css('width', '100%');
                 }
+                if(count==69){
+                    $('.bx-wrapper .bx-next').css('display', 'none');
+                }
+                else{
+                    $('.bx-wrapper .bx-next').css('display', 'block');
+                }
             }
         });
 

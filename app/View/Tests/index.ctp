@@ -42,14 +42,14 @@
                                         <input type="radio" name="respuesta" value="2" id="p2">
                                         <label for="p2">&nbsp;</label>
                                     </div>
-                                    <p>Un formulario que envia RRHH donde los <br/> empleados tienen un rol pasivo</p>
+                                    <p>Un formulario que envía RRHH donde los <br/> empleados tienen un rol pasivo</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio">
                                         <input type="radio" name="respuesta" value="3" id="p3">
                                         <label for="p3">&nbsp;</label>
                                     </div>
-                                    <p>Una Herramienta donde se establecen los <br/> objetivos a corto plazo para mostrar el avance <br/> dentro de tu puesto actual. incluidos los <br/> objetivos de competencia.</p>
+                                    <p>Una Herramienta donde se establecen los <br/> objetivos a corto plazo para mostrar el avance <br/> dentro de tu puesto actual, incluídos  los <br/> objetivos de competencia.</p>
                                 </div>
                                 <a href="#" class="btn_azul" id="submit">OK</a>
                             </div>
@@ -135,21 +135,21 @@
                                         <input type="radio" name="respuesta" value="1" id="p1" checked>
                                         <label for="p1">&nbsp;</label>
                                     </div>
-                                    <p>Un momento basicamente, que es el de fijacion <br/> de objetivos</p>
+                                    <p>Un momento b&#225;sicamente, que es el de fijaci&#243;n <br/> de objetivos</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio">
                                         <input type="radio" name="respuesta" value="2" id="p2">
                                         <label for="p2">&nbsp;</label>
                                     </div>
-                                    <p>Dos momentos basicamente, que son el de fijacion de objetivos y el de cierre y evaluacion</p>
+                                    <p>Dos momentos b&#225;sicamente, que son el de fijaci&#243;n de objetivos y el de cierre y evaluaci&#243;n</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio" id="nueve">
                                         <input type="radio" name="respuesta" value="3" id="p3">
                                         <label for="p3">&nbsp;</label>
                                     </div>
-                                    <p>Tres momentos basicamente, que son el de fijacion de objetivos a principios de a&#241;o, el de revision de objetivos a mediados del a&#241;o y el de cierre y evaluacion a fines del a&#241;o</p>
+                                    <p>Tres momentos b&#225;sicamente, que son el de fijaci&#243;n de objetivos a principio de a&#241;o, el de revisi&#243;n de objetivos a mediados del a&#241;o y el de cierre y evaluaci&#243;n a fines del a&#241;o</p>
                                 </div>
                                 <a href="#" class="btn_azul" id="submit">OK</a>
                             </div>
@@ -160,7 +160,7 @@
         <?php } elseif($pregunta == 4) {?>
             <li>
                 <div class="box_slider box_test">
-                    <h6>Las competencias y la carrera profesional <br/> (Perfiles competenciales - Criterios de progresion)</h6>
+                    <h6>Las competencias y la carrera profesional <br/> (Perfiles competenciales - Criterios de progresi&#243;n)</h6>
                     <div class="left_box">
                         <div class="title_pregunta title_pregunta4">
                             <h3>
@@ -217,7 +217,7 @@
         <?php } elseif($pregunta == 5) {?>
             <li>
                 <div class="box_slider box_test">
-                    <h6>Las competencias y la carrera profesional <br/> (Perfiles competenciales - Criterios de progresion)</h6>
+                    <h6>Las competencias y la carrera profesional <br/> (Perfiles competenciales - Criterios de progresi&#243;n)</h6>
                     <div class="left_box">
                         <div class="title_pregunta title_pregunta5">
                             <h3>
@@ -242,21 +242,21 @@
                                         <input type="radio" name="respuesta" value="1" checked id="p1">
                                         <label for="p1">&nbsp;</label>
                                     </div>
-                                    <p>Basico, Experto, Contribuidor estrategico</p>
+                                    <p>B&#225;sico, Experto, Contribuidor estrat&#233;gico</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio">
                                         <input type="radio" name="respuesta" value="2" id="p2">
                                         <label for="p2">&nbsp;</label>
                                     </div>
-                                    <p>Basico, Avanzado, Experto</p>
+                                    <p>B&#225;sico, Avanzado, Experto</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio">
                                         <input type="radio" name="respuesta" value="3" id="p3">
                                         <label for="p3">&nbsp;</label>
                                     </div>
-                                    <p>Basico, Avanzado, Experto <br/> Contribuidor estrategico</p>
+                                    <p>B&#225;sico, Avanzado, Experto <br/> Contribuidor estrat&#233;gico</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio" id="nueve">
@@ -274,7 +274,7 @@
         <?php } elseif($pregunta == 6) {?>
             <li>
                 <div class="box_slider box_test">
-                    <h6>Las competencias y la carrera profesional <br/> (Perfiles competenciales - Criterios de progresion)</h6>
+                    <h6>Las competencias y la carrera profesional <br/> (Perfiles competenciales - Criterios de progresi&#243;n)</h6>
                     <div class="left_box">
                         <div class="title_pregunta title_pregunta6">
                             <h3>
@@ -299,7 +299,7 @@
                                         <input type="radio" name="respuesta" value="1" id="p1" checked>
                                         <label for="p1">&nbsp;</label>
                                     </div>
-                                    <p>Calificacion del 3P</p>
+                                    <p>Calificaci&#243;n del 3P</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio">
@@ -313,7 +313,7 @@
                                         <input type="radio" name="respuesta" value="3" id="p3">
                                         <label for="p3">&nbsp;</label>
                                     </div>
-                                    <p>Numero recomendado de a&#241;os en  el<br/> puesto de trabajo</p>
+                                    <p>N&#250;mero recomendado de a&#241;os en  el<br/> puesto de trabajo</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio" id="nueve">
@@ -331,7 +331,7 @@
         <?php } elseif($pregunta == 7) {?>
             <li>
                 <div class="box_slider box_test">
-                    <h6>Las competencias y la carrera profesional <br/> (Perfiles competenciales - Criterios de progresion)</h6>
+                    <h6>Las competencias y la carrera profesional <br/> (Perfiles competenciales - Criterios de progresi&#243;n)</h6>
                     <div class="left_box">
                         <div class="title_pregunta title_pregunta7">
                             <h3>
@@ -363,7 +363,7 @@
                                         <input type="radio" name="respuesta" value="2" id="p2">
                                         <label for="p2">&nbsp;</label>
                                     </div>
-                                    <p>2 a&#241;os en la pocicion actual</p>
+                                    <p>2 a&#241;os en la posici&#243;n  actual</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio">
@@ -420,14 +420,14 @@
                                         <input type="radio" name="respuesta" value="1" id="p1" checked>
                                         <label for="p1">&nbsp;</label>
                                     </div>
-                                    <p>Para disponer de versiones ling&#252;isticas diferentes</p>
+                                    <p>Para disponer de versiones ling&#252;&#237;sticas diferentes</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio">
                                         <input type="radio" name="respuesta" value="2" id="p2">
                                         <label for="p2">&nbsp;</label>
                                     </div>
-                                    <p>Para disponer de una vision general de todas <br/> las competencias y sus conductas asociadas</p>
+                                    <p>Para disponer de una visi&#243;n general de todas <br/> las competencias y sus conductas asociadas</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio">
@@ -477,14 +477,14 @@
                                         <input type="radio" name="respuesta" value="2" id="p2">
                                         <label for="p2">&nbsp;</label>
                                     </div>
-                                    <p>Todos en la region</p>
+                                    <p>Todos en la regi&#243;n</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio">
                                         <input type="radio" name="respuesta" value="3" id="p3">
                                         <label for="p3">&nbsp;</label>
                                     </div>
-                                    <p>Todos en ventas en la region</p>
+                                    <p>Todos en ventas en la regi&#243;n</p>
                                 </div>
                                 <a href="#" class="btn_azul" id="submit">OK</a>
                             </div>
@@ -585,7 +585,7 @@
                                         <input type="radio" name="respuesta" value="3" id="p3">
                                         <label for="p3">&nbsp;</label>
                                     </div>
-                                    <p>Eso depende de cuantos a&#209;os haya Ud estado <br/> en la Empresa</p>
+                                    <p>Eso depende de cuantos a&#241;os haya Ud. estado <br/> en la Empresa</p>
                                 </div>
                                 <a href="#" class="btn_azul" id="submit">OK</a>
                             </div>
@@ -621,7 +621,7 @@
                                         <input type="radio" name="respuesta" value="1" id="p1" checked>
                                         <label for="p1">&nbsp;</label>
                                     </div>
-                                    <p>La descripcion general de una competencia</p>
+                                    <p>La descripci&#243;n general de una competencia</p>
                                 </div>
                                 <div class="pregunta">
                                     <div class="radio">
@@ -635,7 +635,7 @@
                                         <input type="radio" name="respuesta" value="3" id="p3">
                                         <label for="p3">&nbsp;</label>
                                     </div>
-                                    <p>La traduccion de una competencia</p>
+                                    <p>La traducci&#243;n de una competencia</p>
                                 </div>
                                 <a href="#" class="btn_azul" id="submit">OK</a>
                             </div>
@@ -722,7 +722,7 @@
                     <div class="felicitaciones">
                         <h3>&#161;Felicitaciones&#33;</h3>
                         <p>
-                            Ud. ha completado satisfactoriamente <br/>
+                            Ud. ha finalizado satisfactoriamente <br/>
                             este e-learning sobre el <br/>
                             Nuevo Modelo de Competencias <br/>
                             y el Plan de Carrera <br/>
