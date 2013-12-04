@@ -726,8 +726,9 @@
                             este e-learning sobre el <br/>
                             Nuevo Modelo de Competencias <br/>
                             y el Plan de Carrera <br/>
-                            aplicable a la Fuerza de Ventas
+                            aplicable a la Fuerza de Ventas <br/>
                         </p>
+                        <h6 class="lasts">Muchas gracias</h6>
                         <img src="/images/hoja.png" alt="Felicitaciones">
                     </div>
                 </div>

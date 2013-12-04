@@ -374,6 +374,11 @@
             </li>
             <li>
                 <div class="box_slider box_test">
+                    <img src="/resource/guias/48b.jpg" alt="guia de planes">
+                </div>
+            </li>
+            <li>
+                <div class="box_slider box_test">
                     <img src="/resource/guias/49a.jpg" alt="guia de planes">
                 </div>
             </li>

@@ -494,7 +494,7 @@ ul.bxslider li p.gp b{
 	font-family: tlight;
 	font-size: 40px;
 	color: #0095cf;
-	margin: 0 0 70px;
+	margin: 0 0 25px 0;
 }
 /*VIDEO*/
 .box_video{
@@ -607,4 +607,9 @@ a.sample_video{
     margin: 0 auto;
     width: 975px;
 }
-
+h6.lasts{
+    font-family: tlight;
+    font-size: 40px;
+    color: #0095cf;
+    margin: 0 0 11px 0;
+}
