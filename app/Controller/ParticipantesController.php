@@ -57,6 +57,9 @@ class ParticipantesController extends AppController {
     public function admin_delete($id = null)
     {
         try {
+            $this->loadModel('Respuesta');
+            $conditions = array('Respuesta.participante_id' => $id);
+            $this->Respuesta->deleteAll($conditions);
             if ($this->Participante->delete($id)) {
                 $this->Session->setFlash(__('El participante con id: %s fue eliminado.', h($id)), 'success_message');
             }

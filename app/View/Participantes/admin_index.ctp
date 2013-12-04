@@ -44,7 +44,7 @@
                         ?>
                         <?= $this->Html->link($editar, array('action' => 'edit', $participante['Participante']['id']), array('escape' => false));?>
                         |
-                        <?= $this->Form->postLink($eliminar, array('action' => 'delete', $participante['Participante']['id']), array('escape' => false, 'confirm' => 'Esta seguro de eliminar?'))?>
+                        <?= $this->Form->postLink($eliminar, array('action' => 'delete', $participante['Participante']['id']), array('escape' => false, 'confirm' => "Esta seguro de eliminar al participante '{$participante['Participante']['nombre']}'?"))?>
                     </td>
                 </tr>
             <?php endforeach; ?>
